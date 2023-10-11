@@ -1,0 +1,14 @@
+{
+  "name": "webhooks-test1",
+  "version": "1.0.0",
+  "description": "Test Webhooks on localhost",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samidh Das",
+  "license": "ISC",
+  "dependencies": {
+    "square": "^29.0.0"
+  }
+}

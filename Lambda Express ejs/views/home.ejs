@@ -1,0 +1,1454 @@
+
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+
+<!--[if gte IE 9]>
+<html class="ie" lang="en-US">
+<![endif]-->
+
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar" content="black"/>
+    <title>The Beginner’s Guide to SAP Activate – Best Practices, Guided Configuration and SAP Activate Methodology | SAP Blogs</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11"/>
+
+    
+    
+    <!--[if lt IE 9]>
+    <script src="https://blogs.sap.com/wp-content/themes/sap-v3-neo/js/html5.min.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <script type="module" src="https://static.community.services.sap/com-hdr/v10/282.116.60/shared-ui/1dx-assets/js/cxs-designsystem/cxs-designsystem.esm.js"></script><link rel="icon" type="image"  href="https://static.community.services.sap/com-hdr/v10/282.116.60/shared-ui/1dx-assets/images/favicon.png" /><link rel="shortcut icon" type="image/x-icon"  href="https://static.community.services.sap/com-hdr/v10/282.116.60/shared-ui/1dx-assets/images/favicon.ico" /><link rel="apple-touch-icon" href="https://static.community.services.sap/com-hdr/v10/282.116.60/shared-ui/1dx-assets/images/apple-touch-icon.png" /><meta name='robots' content='max-image-preview:large' />
+    <script type="text/javascript">
+        window.adobeDataLayer = window.adobeDataLayer || [];
+    </script>
+    <link rel='dns-prefetch' href='//static.community.services.sap' />
+<link rel='dns-prefetch' href='//assets.adobedtm.com' />
+<link rel="alternate" type="application/rss+xml" title="SAP Blogs &raquo; Feed" href="https://blogs.sap.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="SAP Blogs &raquo; Comments Feed" href="https://blogs.sap.com/comments/feed/" />
+<meta name="type" content="Blog" /><meta name="description" content="Project Management is something every one of us has done in our lives. Be it researching and completing your school and university assignments by the given deadline to organising your day to meet with friends" /><meta name="sm_tech_ids" content="67838200100800006884,73554900100800000266,67837800100800007389,73b37c4d-a4aa-4de9-aeb9-a5dc59710b26,67838200100800004730,859834545111167391953063734572784"/><meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" /><link rel="alternate" type="application/rss+xml" title="SAP Blogs &raquo; The Beginner’s Guide to SAP Activate – Best Practices, Guided Configuration and SAP Activate Methodology Comments Feed" href="https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/blogs.sap.com\/res1dx-598\/wp-includes\/js\/wp-emoji-release.min.js"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='twentytwelve-style-css' href='https://blogs.sap.com/res1dx-598/wp-content/themes/sap-v3-neo/style.min.css' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css' href='https://blogs.sap.com/res1dx-598/wp-content/themes/sap-v3-neo/css/ie.css' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='designmate_styles-css' href='https://static.community.services.sap/designmate/v3/241/latest/designmate.css' type='text/css' media='all' />
+<link rel='stylesheet' id='designsystem_styles-css' href='https://static.community.services.sap/community-ds/v1/381/main.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://blogs.sap.com/res1dx-598/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://blogs.sap.com/res1dx-598/wp-includes/css/classic-themes.min.css' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='prism-css' href='https://blogs.sap.com/res1dx-598/wp-includes/js/tinymce/plugins/codesample/css/prism.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sap_custom_link_css-css' href='https://blogs.sap.com/res1dx-598/wp-content/plugins/sap-core-custom//include/css/sap-core-custom.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sap_lightbox_gallery_css-css' href='https://blogs.sap.com/res1dx-598/wp-content/plugins/sap-lightbox-gallery/lib/lightbox-gallery.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pt_style_css-css' href='https://blogs.sap.com/res1dx-598/wp-content/plugins/sap-primary-tag/css/pt_style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wordpress-popular-posts-css-css' href='https://blogs.sap.com/res1dx-598/wp-content/plugins/wordpress-popular-posts/assets/css/wpp.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+<script type='text/javascript' id='jquery-core-js-after'>
+if (jQuery !== undefined) {
+                jQuery(window).on("load", function(){
+                    var _wpWindowLoaded = document.createElement("div");
+                    _wpWindowLoaded.setAttribute("class", "hidden");
+                    _wpWindowLoaded.setAttribute("id", "wp_window_loaded");
+                    document.body.appendChild(_wpWindowLoaded);
+                });
+            }
+</script>
+<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='//assets.adobedtm.com/ccc66c06b30b/d266848b2882/launch-f095fbc32a96.min.js' id='scn_adobe_dtm-js'></script>
+<script type='application/json' id='wpp-json'>
+{"sampling_active":0,"sampling_rate":100,"ajax_url":"https:\/\/blogs.sap.com\/wp-json\/wordpress-popular-posts\/v1\/popular-posts","api_url":"https:\/\/blogs.sap.com\/wp-json\/wordpress-popular-posts","ID":1235511,"token":"66b1746d52","lang":0,"debug":0}
+</script>
+<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-content/plugins/wordpress-popular-posts/assets/js/wpp.min.js' id='wpp-js-js'></script>
+<link rel="https://api.w.org/" href="https://blogs.sap.com/wp-json/" /><link rel="alternate" type="application/json" href="https://blogs.sap.com/wp-json/wp/v2/posts/1235511" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blogs.sap.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blogs.sap.com/wp-includes/wlwmanifest.xml" />
+
+<link rel="canonical" href="https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/" />
+<link rel='shortlink' href='https://blogs.sap.com/?p=1235511' />
+<script type="text/javascript">var ajaxurl = "https://blogs.sap.com/wp-admin/admin-ajax.php";var likePostLabel = "Like";var unLikePostLabel = "Liked";var likeCommentLabel = "Like";var unLikeCommentLabel = "Liked";</script>            <style id="wpp-loading-animation-styles">@-webkit-keyframes bgslide{from{background-position-x:0}to{background-position-x:-200%}}@keyframes bgslide{from{background-position-x:0}to{background-position-x:-200%}}.wpp-widget-placeholder,.wpp-widget-block-placeholder{margin:0 auto;width:60px;height:3px;background:#dd3737;background:linear-gradient(90deg,#dd3737 0%,#571313 10%,#dd3737 100%);background-size:200% auto;border-radius:3px;-webkit-animation:bgslide 1s infinite linear;animation:bgslide 1s infinite linear}</style>
+                <!--[if IE ]>
+    <link rel="stylesheet" id="scn-ie-styles" href="https://blogs.sap.com/wp-content/themes/sap-v3-neo/css/ie.css"
+          type="text/css" media="all">
+    <link id="ids-popup-css" href="https://accounts.sap.com/universalui/shared/stylesheets/idsPopup.css"
+          rel="stylesheet"
+          type="text/css">
+    <![endif]-->
+
+
+</head>
+
+<body class="post-template-default single single-post postid-1235511 single-format-standard">
+
+
+<div class="page-wrapper">
+<b class="cn-accessibility"><a href="#main" tabindex="0" accesskey="S">Skip to Content</a></b>
+<div id="page" class="hfeed site">
+
+<header id="masthead" class="blogs-nav sap-header">
+    
+  <div class="ds-community-header">
+    <ds-contextual-navigation
+      main-links='[{"title":"Topics","url":"https://community.sap.com/topics","subMenuRows":[]},{"title":"Groups","url":"https://groups.community.sap.com","subMenuRows":[{"subMenuLinkItems":[{"category":"","url":"","items":[{"title":"All Groups","url":"https://groups.community.sap.com/","externalLink":true},{"title":"Locations","url":"https://groups.community.sap.com/t5/location/ct-p/location","externalLink":true},{"title":"Interests","url":"https://groups.community.sap.com/t5/interests/ct-p/interests","externalLink":true},{"title":"Activities","url":"https://groups.community.sap.com/t5/activities/ct-p/activities","externalLink":true},{"title":"Influence and Feedback Groups","url":" https://groups.community.sap.com/t5/influence-and-feedback-groups/ct-p/influence-feedback","externalLink":true}],"displayItemsAsCategoryLink":false}]}]},{"title":"Answers","url":"https://answers.sap.com","subMenuRows":[{"subMenuLinkItems":[{"category":"","url":"","items":[{"title":"All Questions","url":"https://answers.sap.com","externalLink":false},{"title":"Ask a Question","url":"https://answers.sap.com/questions/ask.html","externalLink":false},{"title":"How to Ask a Question","url":"https://developers.sap.com/tutorials/community-qa.html","externalLink":true},{"title":"Using Tags","url":"https://community.sap.com/resources/using-tags","externalLink":false},{"title":"All Tags","url":"https://answers.sap.com/tags.html","externalLink":false}],"displayItemsAsCategoryLink":false}]}]},{"title":"Blogs","url":"https://blogs.sap.com","subMenuRows":[{"subMenuLinkItems":[{"category":"","url":"","items":[{"title":"All Blog Posts","url":"https://blogs.sap.com","externalLink":false},{"title":"Write a Blog Post","url":"https://blogs.sap.com/wp-admin/post-new.php","externalLink":false},{"title":"How to Write a Blog Post","url":"https://community.sap.com/resources/blogging","externalLink":false},{"title":"Using Tags","url":"https://community.sap.com/resources/using-tags","externalLink":false},{"title":"Using Categories","url":"https://community.sap.com/resources/blogging#Using_categories","externalLink":false},{"title":"All Tags","url":"https://blogs.sap.com/tags/","externalLink":false}],"displayItemsAsCategoryLink":false}]}]},{"title":"Events","url":"","subMenuRows":[{"subMenuLinkItems":[{"category":"","url":"","items":[{"title":"All Events","url":"https://groups.community.sap.com/t5/events/ct-p/events","externalLink":true},{"title":"SAP Community","url":"https://groups.community.sap.com/t5/sap-community/eb-p/community-events","externalLink":true},{"title":"SAP CodeJam","url":"https://groups.community.sap.com/t5/sap-codejam/eb-p/codejam-events","externalLink":true},{"title":"SAP Community Calls","url":"https://groups.community.sap.com/t5/sap-community-calls/eb-p/community-calls","externalLink":true},{"title":"SAP Inside Track","url":"https://groups.community.sap.com/t5/sap-insidetrack/eb-p/insidetrack","externalLink":true},{"title":"SAP Stammtisch","url":"https://groups.community.sap.com/t5/sap-stammtisch/eb-p/stammtisch","externalLink":true},{"title":"SAP SuccessFactors","url":"https://groups.community.sap.com/t5/sap-successfactors/eb-p/successfactorsevents","externalLink":true},{"title":"User Groups","url":"https://groups.community.sap.com/t5/user-groups/eb-p/user-groups","externalLink":true}],"displayItemsAsCategoryLink":false}]}]},{"title":"Programs","url":"https://community.sap.com/programs","subMenuRows":[{"subMenuLinkItems":[{"category":"","url":"","items":[{"title":"Influencers","url":"https://community.sap.com/programs/influencer-programs","externalLink":false},{"title":"Spotlight Interviews","url":"https://community.sap.com/programs/spotlight-interviews","externalLink":false},{"title":"All Programs","url":"https://community.sap.com/programs","externalLink":false}],"displayItemsAsCategoryLink":false}]}]},{"title":"Resources","url":"https://community.sap.com/resources","subMenuRows":[{"subMenuLinkItems":[{"category":"","url":"","items":[{"title":"Getting Started","url":"https://developers.sap.com/tutorials/community-2022.html","externalLink":true},{"title":"Community Tutorials","url":"https://community.sap.com/resources/tutorials","externalLink":false},{"title":"Community Videos","url":"https://community.sap.com/resources/tip-in-a-minute#Videos","externalLink":false},{"title":"Community Voice Newsletter","url":"https://community.sap.com/voice-nl","externalLink":false},{"title":"Reputation","url":"https://community.sap.com/resources/reputation","externalLink":false},{"title":"Missions & Badges","url":"https://community.sap.com/resources/missions-badges","externalLink":false},{"title":"Moderation","url":"https://community.sap.com/resources/moderation","externalLink":false},{"title":"Rules of Engagement","url":"https://community.sap.com/resources/rules-of-engagement","externalLink":false},{"title":"All Resources","url":"https://community.sap.com/resources","externalLink":false}],"displayItemsAsCategoryLink":false}]}]},{"title":"What&apos;s New","url":"https://community.sap.com/resources/what-is-new","subMenuRows":[]}]'
+      explore-sap-link='{"title":"Explore SAP","subMenuRows":[{"subMenuLinkItems":[{"category":"Products","url":"https://www.sap.com/products.html","items":[{"title":"Business Network","url":"https://www.sap.com/products/business-network.html"},{"title":"Business Technology Platform","url":"https://www.sap.com/products/technology-platform.html"},{"title":"CRM and Customer Experience","url":"https://www.sap.com/products/crm.html"},{"title":"Enterprise Resource Planning","url":"https://www.sap.com/products/erp.html"},{"title":"Financial Management","url":"https://www.sap.com/products/financial-management.html"},{"title":"Human Capital Management","url":"https://www.sap.com/products/hcm.html"},{"title":"Small and Midsize Enterprises","url":"https://www.sap.com/products/sme-business-software.html"},{"title":"Spend Management","url":"https://www.sap.com/products/spend-management.html"},{"title":"Supply Chain Management","url":"https://www.sap.com/products/scm.html"},{"title":"Sustainability Management","url":"https://www.sap.com/sustainability.html"},{"title":"-","url":""},{"title":"View products A-Z","url":"https://www.sap.com/products/a-z.html"},{"title":"View Industries","url":"https://www.sap.com/industries.html"},{"title":"Trials and Demos","url":"https://www.sap.com/products/free-trials.html"},{"title":"-","url":""},{"title":"Partners","url":"https://www.sap.com/partners.html"},{"title":"-","url":""},{"title":"Services","url":"https://www.sap.com/services-support.html"}],"displayItemsAsCategoryLink":false},{"category":"Learning and Support","url":"","items":[{"title":"Learning and Certification","url":"https://learning.sap.com"},{"title":"Support","url":"https://support.sap.com"},{"title":"Documentation","url":"https://help.sap.com"},{"title":"Community","url":"https://community.sap.com/"}],"displayItemsAsCategoryLink":false},{"category":"About","url":"","items":[{"title":"Company Information","url":"https://www.sap.com/about/company.html"},{"title":"Careers","url":"https://jobs.sap.com/?utm_source=CareerSite&utm_campaign=CorpSite_HD"},{"title":"Customer Stories","url":"https://www.sap.com/about/customer-stories.html"},{"title":"Events","url":"https://www.sap.com/events.html"},{"title":"Investor Relations","url":"https://www.sap.com/investors/en.html"},{"title":"News Center","url":"https://news.sap.com/"},{"title":"Security and Trust","url":"https://www.sap.com/about/trust-center.html"}],"displayItemsAsCategoryLink":false}]}],"displayTitle":"Explore all areas of SAP"}'
+      landing-zone='{"title":"Community","url":"https://community.sap.com/"}'
+      profile='{"accountManagementUrl":"https://people.sap.com","links":[{"title":"Ask a Question","url":"https://answers.sap.com/questions/ask.html"},{"title":"Write a Blog Post","url":"https://blogs.sap.com/wp-admin/post-new.php"},{"title":"Activity Stream","url":"https://activities.sap.com"},{"title":"Send a Message","url":"https://messages.sap.com"},{"title":"Inbox","url":"https://people.sap.com/inbox"}]}'
+      search-config='{"disabled":false,"url":"https://community.sap.com/search/","placeholder":"Search the SAP Community","inputName":"q","queryParameters":{"ct":"all","searchReferrer":"contextual_navigation_development"}}'
+      on-country-selected='country => alert(country)'
+      country-selector-config='{"enabled":false,"searchDisabled":false,"regions":[]}'
+      hide-explore-sap-link='false'
+      avatar-source-url='https://avatars.services.sap.com/images'
+    ></ds-contextual-navigation>
+  </div><div class="announcements" role="menubar"><script type="text/javascript">function readAnnouncementCookie(n){const e=new RegExp("(?:(?:^|.*;\\s*)"+n+"\\s*\\=\\s*([^;]*).*$)|^.*$"),t=document.cookie.replace(e,"$1");if(t)try{var o=JSON.parse(decodeURIComponent(t))}catch(n){console.error(n)}return o}function initAnnouncement(n){const e={typeId:n.typeId,version:parseInt(n.version),startDate:new Date(n.startDate),endDate:new Date(n.endDate),containerId:n.containerId},t=new Date;if(t>=e.startDate&&t<e.endDate){const n="sap_comm_global_announcements",o=readAnnouncementCookie(n),a=e.typeId+"-"+e.version;if(!o||!o[a]||!o[a].closed){const o=document.getElementById(e.containerId);o.classList.remove("ds-global-announcement--hidden"),o.querySelector("span.ds-global-announcement__close-button").onclick=function(){o.classList.add("ds-global-announcement--hidden"),e.closed=!0;const c={};c[a]=e;const s=readAnnouncementCookie(n);if(s)for(var d in s)a!=d&&new Date(s[d].endDate)>=t&&(c[d]=s[d]);const i=new Date;i.setMonth(i.getMonth()+12);const r=document.location.hostname,m=r.lastIndexOf(".sap.com")==r.length-".sap.com".length?".sap.com":document.location.hostname;document.cookie=n+"="+JSON.stringify(c)+";expires="+i+";domain="+m+";path=/"}}}}</script><div class="ds-content-wrapper ds-global-announcement-wrapper"><div class="ds-flexGrid"><div class="ds-global-announcement ds-global-announcement--hidden" id="global-announcement"><div class="ds-flexGrid ds-global-announcement__content-wrapper"><div class="ds-flexRow ds-global-announcement__content-row"><div class="ds-global-announcement__icon-wrapper"><i class="ds-icon--exclamation-circle ds-global-announcement__icon"></i></div><div class="ds-global-announcement__details-wrapper ds-flexCol"><div class="ds-global-announcement__details"><div class="ds-global-announcement__title-wrapper"><span class="ds-global-announcement__title">SAP Community Log-in Update</span></div><div class="ds-global-announcement__description">In a few months, SAP Community will switch to SAP Universal ID as the only option to login. Don’t wait, create your SAP Universal ID now! If you have multiple S- or P- accounts, use the Consolidation Tool to merge your content.</div></div><a class="ds-button ds-button--primary ds-global-announcement__readmore" href="https://community.sap.com/resources/universal-id-faq" title="Get started with SAP Universal ID" target="_blank">Get started with SAP Universal ID</a></div></div></div><span class="ds-global-announcement__close-button" role="button" tabindex="0" aria-label="Click to close announcement"><i class="ds-icon--big ds-icon--close ds-global-announcement__close-icon"></i></span></div></div></div><script type="text/javascript">initAnnouncement({
+            typeId: 'global-announcement',
+            containerId: 'global-announcement',
+            version: 99,
+            startDate: '2023-07-26T15:19:04.000Z',
+            endDate: '2023-09-01T05:00:09.000Z'
+        });</script></div><div class="dm-wrapper dm-subheader dm-subheader--wrapper  dm-user--unauthenticated "><div class="dm-grid"><div class="dm-breadcrumb dm-user--unauthenticated" role="menubar">
+    <ul class="dm-breadcrumb-nav" role="navigation" aria-label="breadcrumb navigation to trace the path back to original landing point">
+        
+        <li><a id="comm-shdr-breadcrumb-home" href="https://www-qa.sap.com" title="Home">Home</a></li>
+        
+        <li><a id="comm-shdr-breadcrumb-community" href="https://community-qa.sap.com" title="Community">Community</a></li>
+        
+    </ul>
+    <ul class="dm-breadcrumb-actions" role="menu">
+        
+        <li><a id="comm-shdr-AskQuestion" href="https://answers-qa.sap.com/questions/ask.html" title="Ask a Question">Ask a Question</a></li>
+        
+        <li><a id="comm-shdr-WriteBlogPost" href="https://blogs-qa.sap.com/wp-admin/post-new.php" title="Write a Blog Post">Write a Blog Post</a></li>
+        
+        <li class="dm-user__login-button--wrapper"><a class="dm-button-small dm-button--primary" role="button" rel="IDS_login" aria-label="Login or Sign up. Click here to log in or sign up"><span class="dm-button-text">Login / Sign-up</span></a></li>
+        <li class="dm-breadcrumb-actions__dropdown">
+            <span id="comm-shdr-actions-opener" class="dm-breadcrumb-actions__dropdown-toggle" title="Community actions">
+                 <span class="dm-icon-encoded dm-icon-encoded--3dots"></span>
+            </span>
+            <ul id="comm-shdr-user-actions-ul" class="dm-breadcrumb-actions__dropdown-menu" role="menu">
+            </ul>
+        </li>
+    </ul>
+</div>
+</div></div>    <!-- #site-navigation -->
+
+</header>
+
+<!-- #masthead -->
+<div id="main" tabindex="0" class="wrapper">
+
+
+
+
+<div class="ds-blog-post-detail">
+<div class="ds-flexGrid">
+  <div class="ds-flexRow">
+    <div class="ds-flexCol">
+            <div class="ds-content-wrapper ds-blog-post__content-wrapper">
+        <h6 class="ds-heading ds-heading--xs ds-blog-post__sub-title"><span>Product Information</span></h6>
+        <div class="ds-flexRow">
+          <div class="ds-flexCol-sm-12 ds-flexCol-md-9">
+            
+<div class="ds-blog-post__body-wrapper">
+  <div class="ds-blog-post__content">
+    <div class="ds-blog-post__header-wrapper">
+      <a target="_blank" rel="noopener noreferrer" href="https://people.sap.com/mohitravishankar" class="ds-blog-post__avatar "  >
+        <img alt='Author&#039;s profile photo Mohit Ravi Shankar' src='https://avatars.services.sap.com/images/mohitravishankar.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />      </a>
+      <div class="ds-blog-post__author-info-wrapper">
+        <div class="ds-user ds-blog-post__author">
+          <a class="ds-link ds-user__name " href="https://people.sap.com/mohitravishankar" target="_blank" title="Mohit Ravi Shankar" aria-label="" rel="noopener noreferrer">Mohit Ravi Shankar</a>
+                  </div>
+        <div class="ds-blog-post__meta-info">
+          <span class="ds-blog-post__date">December 8, 2020</span>
+          <span class="ds-blog-post__read-duration">11 minute read</span>
+        </div>
+      </div>
+    </div>
+    <h1 class="ds-heading ds-heading--m ds-blog-post__title">The Beginner’s Guide to SAP Activate – Best Practices, Guided Configuration and SAP Activate Methodology</h1>
+    <div class="ds-blog-post__social-stats-wrapper">
+      <div class="ds-social-stats ">
+        <span class="ds-social-stats__stat">
+          <i class="ds-icon ds-icon--comments"></i>28        </span>
+        <span id="post-likes-counter" class="ds-social-stats__stat">
+          <i class="ds-icon ds-icon--likes-outline"></i>141        </span>
+        <span class="ds-social-stats__stat">
+          <i class="ds-icon ds-icon--views"></i>171,508        </span>
+      </div>
+          </div>
+    <div class="ds-blog-post__body ds-editor-content">
+      <p>Project Management is something every one of us has done in our lives. Be it researching and completing your school and university assignments by the given deadline to organising your day to meet with friends and family, we always make a mental plan before we act on it.</p>
+<p>In a way, each, and every one of us are project managers. We need to plan and schedule our daily tasks and meetings. Sometimes, it is difficult to manage our own day and we feel out of control.</p>
+<p>Can you imagine the difficulties faced by Project Managers who are leading projects internally and for customers? Now imagine the difficulties a million-dollar SAP project holds in terms of planning your deliverables, resources, and deadlines!</p>
+<p>SAP has come up with SAP Activate, a framework to enable SAP project managers across the globe to deliver projects with ease and clarity. A common misconception among the SAP fraternity is that SAP Activate is a project management methodology. It is much more than that!</p>
+<p>&nbsp;</p>
+<h2><strong>The 3 Pillars of SAP Activate framework:</strong></h2>
+<p>SAP Activate is a framework that consists of 3 important pillars:</p>
+<ol>
+<li>SAP Best Practices</li>
+<li>Guided Configurations</li>
+<li>SAP Activate Methodology.</li>
+</ol>
+<p>These 3 pillars together can empower project managers and consultants and even the business end-users to easily understand the SAP solution that is implemented to solve their business pain point.</p>
+<p>How does SAP Activate help all stakeholders involved in a project? Let’s find out!</p>
+<p>&nbsp;</p>
+<h2><strong>Pillar 1 – SAP Best Practices:</strong></h2>
+<p>SAP, with their 45+ years of widely accepted industry-specific, best practice knowledge and experience has delivered ready-to-run business processes that are optimized for SAP S/HANA. These business processes are well documented and pre-delivered by SAP and can be viewed in the Best Practice Explorer. It consists of best practices for integration, migration, and extensibility to expand the existing processes with the customer&#8217;s own processes. The Best Practice Explorer provides consultants and customers with all the best practices across LoBs in the form of business process flows, roles and responsibilities and standard test scripts that also work as a user manual. This forms the first pillar of the SAP Activate framework.</p>
+<p style="overflow: hidden;margin-bottom: 0px"><img class="aligncenter ds-lightbox__img" decoding="async" src="https://blogs.sap.com/wp-content/uploads/2020/12/SAP-Best-Practices.jpg" alt="SAP%20Best%20Practices" data-index="1" data-id="plbox-1235511" /></p>
+<p class="image_caption" style="text-align: center;font-style: italic">SAP Best Practices</p>
+<h2></h2>
+<h2><strong>Pillar 2 – Guided Configuration:</strong></h2>
+<p>The second pillar of the SAP Activate framework comes in the form of guided configurations to make it an easier experience for consultants and customers to configure their SAP system. SAP is working to globalise and standardize best practices across industries. In accordance with the same, SAP provides users with standard configurations that can be used to run a business process. Additionally, for customer-specific requirements, SAP is providing a self-service configuration user experience. The guided configuration also offers capabilities of content lifecycle management that essentially involves looking at the configuration settings and ensuring that the configuration settings that are set in that solution are not impacted by a new version of best practices or a new version of processes that are being shipped in the next release of the SAP solution. This is extremely important in the cloud where the release cycle is much more compressed.</p>
+<p>SAP S/4HANA Cloud comes with new capabilities and functionalities every quarter for the Public Cloud/Multi-tenant Edition. The Private Cloud/Single-tenant edition of SAP S/4HANA Cloud comes with 1 optional and 1 mandatory upgrade a year. SAP S/4HANA delivered on-premise receives a yearly upgrade. Since the rate of upgrades is more for the cloud variants of SAP S/4HANA in comparison to on-premise, it is very important to use the guided configuration tools provided by SAP to ensure standardisation.</p>
+<p style="overflow: hidden;margin-bottom: 0px"><img class="aligncenter ds-lightbox__img" decoding="async" src="https://blogs.sap.com/wp-content/uploads/2020/12/Guided-Configurations.jpg" alt="Guided%20Configuration" data-index="2" data-id="plbox-1235511" /></p>
+<p class="image_caption" style="text-align: center;font-style: italic">Guided Configuration</p>
+<h2></h2>
+<h2><strong>Pillar 3 – SAP Activate Methodology:</strong></h2>
+<p>SAP Activate Methodology is the next generation project implementation methodology used to implement and deliver SAP innovations and solutions. Built on the Agile methodology, SAP Activate methodology takes an iterative approach to continuously improve and deliver to increase the project quality and success.</p>
+<h3><strong>What is the difference between SAP Activate Methodology and SAP Launch/ASAP Methodology?</strong></h3>
+<p style="overflow: hidden;margin-bottom: 0px"><img class="aligncenter ds-lightbox__img" decoding="async" src="https://blogs.sap.com/wp-content/uploads/2020/12/Difference-between-SAP-ActivateLaunchASAP.jpg" alt="Difference%20between%20SAP%20Activate/Launch/ASAP" data-index="3" data-id="plbox-1235511" /></p>
+<p class="image_caption" style="text-align: center;font-style: italic">Difference between SAP Activate/Launch/ASAP</p>
+<p>&nbsp;</p>
+<p>The SAP Roadmap Viewer has provided 15 different SAP Activate methodologies according to the SAP Solution in question and has segmented them in the following way:</p>
+<ol>
+<li>
+<h3>General</h3>
+<ul>
+<li>SAP Activate Methodology for New Cloud Implementations (Public Cloud-General)</li>
+<li>SAP Activate Methodology for Business Suite and On-Premises- Agile and Waterfall</li>
+</ul>
+</li>
+<li>
+<h3>Solution Specific</h3>
+<ul>
+<li>SAP Activate Methodology for SAP S/4HANA Cloud</li>
+<li>SAP Activate Methodology for SAP S/4HANA Cloud, extended edition</li>
+<li>SAP Activate Methodology for SuccessFactors</li>
+<li>SAP Activate Methodology for SAP Service Cloud Roadmap</li>
+<li>SAP Activate Methodology for SAP Data Warehouse Cloud</li>
+<li>SAP Activate Methodology for Intelligent Spend Management Roadmap</li>
+<li>SAP Activate Methodology for SAP Analytics Cloud</li>
+<li>SAP Activate Methodology for the Intelligent Enterprise</li>
+<li>SAP Activate Methodology for SAP Sales Cloud Roadmap</li>
+<li>SAP Activate Methodology for Transition to SAP S/4HANA</li>
+<li>SAP Activate Methodology for Transition to SAP BW/4HANA</li>
+<li>SAP S/4HANA Upgrade and Product Integration Roadmap</li>
+<li>SAP Activate methodology for S/4HANA Central Finance</li>
+</ul>
+</li>
+</ol>
+<p>&nbsp;</p>
+<p>These 15 different SAP Activate methodologies have little to major differences between them depending on whether it is a Greenfield Implementation or a Brownfield Conversion project from SAP ECC to SAP S/4HANA. In this blog, we will see what the SAP Activate Methodology says for a general greenfield implementation.</p>
+<p>A customer goes through 6 different phases right from the minute they search for a solution to solve their business pain point to finally implementing and using the solution to streamline processes internally. SAP has beautifully mapped these touchpoints into 6 different phases during a customer and partner’s journey to making the best out of SAP products.</p>
+<p>SAP Activate Methodology has 6 Phases to it:</p>
+<ul>
+<li>Discover</li>
+<li>Prepare</li>
+<li>Explore</li>
+<li>Realise</li>
+<li>Deploy</li>
+<li>Run</li>
+</ul>
+<p style="overflow: hidden;margin-bottom: 0px"><img class="aligncenter ds-lightbox__img" decoding="async" loading="lazy" src="https://blogs.sap.com/wp-content/uploads/2020/12/SAP-Activate.jpg" alt="SAP%20Activate%20Methodology" width="665" height="134" data-index="4" data-id="plbox-1235511" /></p>
+<p class="image_caption" style="text-align: center;font-style: italic">SAP Activate Methodology</p>
+<h3></h3>
+<h3><strong>Discover Phase:</strong></h3>
+<p>The Discover phase is where the customer realises there is a need for a solution to satisfy their business pain point and starts looking out for the right SAP solution to map their requirements. During this phase, customers can apply for a free trial solution if applicable and try it out for themselves to check the features and functionalities of the solution. Customers can even reach out to partners like iQuantM to get the best consulting advise based on years of industry and SAP product experience to find the best solution. By the end of this phase, customers finalize to go ahead with the required SAP solution and move to the next phase in their implementation lifecycle.</p>
+<p>&nbsp;</p>
+<h3><strong>Prepare Phase:</strong></h3>
+<p>As the name suggests, this phase is crucial to both customers and partners as key activities that are crucial to the success of the project are completed with mutual consent. The system is provisioned to the customer post-signing of the contract with SAP and the partner. Simultaneously, key resources are identified from the partner side in terms of the SAP Consultants getting onboarded and enabled. From the customer side, business process owners are identified to provide the right requirements to the consultants implementing the project. A high-level project plan along with roles and responsibilities is finalised along with the project team, project governance procedure and escalation matrix and the project is ready to kick-off!</p>
+<p>During this phase, an initial level of requirement is already collected when the business process owners fill in the Business-Driven Configuration Assessment questionnaire. This is a readily available document for the project team that can be downloaded and used to fasten the project delivery. Based on the answers obtained from the assessment, consultants need to plan for the next and probably most important phase of the SAP Activate Methodology – the Explore Phase.</p>
+<p>&nbsp;</p>
+<h3><strong>Explore Phase:</strong></h3>
+<p>The Explore Phase pretty much lays the foundation for the success of the project. In this phase, customers and partners collaborate with each other for 1 outcome – to finalize the business process to be followed in the new SAP system. This is done by a series of “Fit-to-Standard Analysis” sessions, where the SAP Best Practice business process flow is showcased to the Business Process Owner. Consultants first display a flowchart of the business process and later drive a demo of the same using the initial system that was provisioned to them. The project team then have a healthy discussion on how the business can map their business to the best practices. This is the usual process when it comes to SAP S/4HANA Public Cloud, otherwise known as SAP S/4HANA Cloud, Multi-tenant Edition. For the SAP S/4HANA business suite and SAP S/4HANA Private Cloud otherwise known as SAP S/4HANA Cloud, Single-tenant Edition, there is an additional “Fit-to-Gap Analysis” session where, additional requirements of the business can be noted and later mapped to the SAP system based on feasibility.</p>
+<p>Another major point that SAP Activate has made easier for consultants is the standard migration templates that are readily available to download. This comes as a point of relief, especially for consultants who otherwise used to spend a lot of time coming up with a migration template to help the business fill in the information that is required to be migrated to the new system. This helps the project team save an immense amount of time and the business finds it comfortable to fill in the required information as advised by SAP. The business users are enabled on the migration templates and they can now internally start working on data consolidation, cleansing, and formatting to be filled into the standard migration templates. This comes as a huge relief to both the customer and partner project teams as working on data is arguable one of the most difficult portions of a project!</p>
+<p>One of the best parts of the explore phase is the “Customer Execution of Standard Processes”. What SAP Activate tries to achieve is to build an early relationship between the end-users and the SAP system for an easier and accelerated adoption of widely accepted business processes. Consultants provide the business users with the documents required and help them run an end-to-end cycle in the SAP system. The previously self-enabled business is now familiar with the system and provides their concurrence that they have executed the business process in the system. They are provided with their own user access to explore and get familiarised with the system. This is great, especially in the initial stages of the project because this helps for an easier UAT in the next phase of the project.</p>
+<p>All of the customer’s requirements in terms of additional WRICEF objects – Workflows, Reports, Integrations, Conversions, Enhancements and Forms along with the configuration values are noted in the Backlog document provided by SAP which is then signed off to signed off mutually between the partner and the customer. This backlog document consists of all the customer-specific requirements that need to be available in the SAP system for the business users to perform their daily tasks. Consultants then prioritize according to feasibility, difficulty and importance and plan the sprints for the Realize Phase where the primary aim is to close each of the Backlog items one by one.</p>
+<p>A change impact analysis is done to understand how the new system will benefit the business and actions to enable a smooth transition to the new system are decided among the stakeholders of the project. Key users are identified and an end-user learning needs analysis is done and a learning plan is prepared for the key users who will help drive the success of the system during the duration of the project.</p>
+<p>&nbsp;</p>
+<h3><strong>Realize Phase:</strong></h3>
+<p>Once the Explore Phase deliverables are signed off, the project team can start working on the Quality system provisioned by SAP. In this phase, the SAP consultants start configuring the SAP system according to the Backlog document that is signed off. This happens in an iterative approach where the project team works based on multiple sprints that have been planned to execute the project by breaking down the backlog requirements into smaller deliverables that need to be showcased to the business process owner and signed off as completed once it matches the agreed-upon completion criteria. This is the phase where consultants are in regular touch with the business process owner to showcase to them, the SAP system they are building through multiple Solution Walkthrough’s that are scheduled through the Realize Phase.</p>
+<p>The technical teamwork on completed the WRICEF objects that were noted in the Backlog document during this phase and work hand in hand with the SAP functional consultants and business users to ensure the custom objects are delivered with quality within the timeline.</p>
+<p>User Roles and Authorizations can be a hectic process to finalize on, especially in large projects. For the same, SAP has provided us with standard persona-based roles that help the business users with their tasks through an End-to-End business process. For example, a maintenance technician will be provided with standard roles required for a maintenance technician in the SAP system and a maintenance manager will be provided with the standard role enabling him to perform his tasks as per the best practice in the SAP system.</p>
+<p>In this phase, multiple levels of testing such as Unit Testing, String Testing, Integration Testing and User Acceptance Testing is performed to ensure the SAP system is configured according to the customer requirements provided by the business process owners. Data migration testing is also done to ensure the data filled in by the business users are in the correct format and ready to import to the brand-new SAP system.</p>
+<p>Once all the deliverables are satisfied, a cutover plan is made to move the configurations, WRICEF objects and master and transactional data to the Production system which will be the system used by the business in real-time. This signifies the end of the Realize Phase.</p>
+<p>&nbsp;</p>
+<h3><strong>Deploy Phase:</strong></h3>
+<p>In the Deploy Phase, once every checkbox is ticked and everything is ready, the business faces a temporary downtime as the new SAP system is Deployed for usage to the business users. This is typically done during a weekend to ensure that customers have little to no effect due to the downtime. The cutover is a process that sometimes gives consultants sleepless nights as this is the culmination of all their hard work being moved into the SAP system for the usage of an entire organisation.</p>
+<p>Once the cutover is done successfully and checked by the partner and the customer, the business users are supported by the consultants and the key users who now form the first line of defence in case users have doubts or face an issue. The customers and partners can now relish the success of the project through an intense time filled with dedication and hard work from all stakeholders involved.</p>
+<p>&nbsp;</p>
+<h3><strong>Run Phase:</strong></h3>
+<p>The Run Phase signifies the end of the customer&#8217;s lifecycle from identifying a solution for their business need to finally implement the solution and running their business process on the same. In the Run Phase, the customer project team are given only 1 task – to be updated with the latest innovation and technologies in SAP, especially in the product they have implemented by having a “Continuous Learning” to keep up with the pace of technology.</p>
+<p>&nbsp;</p>
+<p>SAP Activate has matured to be a great methodology to be used for SAP S/4HANA implementation and conversion projects. Everyone who has been in a project knows how difficult it is to carry the torch from the start to the finish line. SAP Activate has really helped project managers and consultants across the globe complete projects successfully at a much faster rate. Despite the COVID-19 pandemic, numerous customers have successfully gone live with SAP solutions using the SAP Activate Methodology. Kudos to <a href="https://people.sap.com/jan.musil"  target="_blank" >Jan Musil</a>, Chief Product Owner of SAP Activate Methodology and his team for streamlining phases, tasks and deliverables for a successful project.</p>
+<p>&nbsp;</p>
+<p>For more information on SAP Activate and how it should be used to successfully implement an SAP solution. You can find some important links for Project Managers, Consultants and End Users below:</p>
+<ol>
+<li>SAP Roadmap Viewer – <a href="https://go.support.sap.com/roadmapviewer/"  target="_blank" >https://go.support.sap.com/roadmapviewer/</a></li>
+<li>SAP Best Practice Explorer – <a href="https://rapid.sap.com/bp/"  target="_blank" >https://rapid.sap.com/bp/</a></li>
+</ol>
+    </div>
+  </div>
+  <div class="ds-blog-post__social-side-bar">
+    <div class="ds-sticky-on-scroll ">
+      <div class="ds-sticky-on-scroll__wrapper  ">
+        <div class="ds-sticky-on-scroll__content">
+          <div class="ds-blog-post__social-actions">
+            <button class="sap-button-follow ds-button ds-button--primary ds-blog-post__social-action ds-blog-post__social-action--follow" id="sap-button-follow-hdr-id" onclick="location.href='https://blogs.sap.com/wp-login.php?redirect_to=https%3A%2F%2Fblogs.sap.com%2F2020%2F12%2F08%2Fthe-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology%2F%3Fs_action%3Dss_change_follow_status%26nonce%3D383041a4e5'" rel="IDS_login"  type="button" data-content-type="blogpost" data-content-id="1235511" data-nonce="383041a4e5" title="Please log into the system to use follow/unfollow functionality."><span class="ds-button-text">Follow</span></button>            <button type='button' class='ds-button ds-button--secondary ds-button--icon-button ds-blog-post__social-action likes-post-link dolike ' rel='IDS_login' onclick="location.href='https://blogs.sap.com/wp-login.php?redirect_to=https%3A%2F%2Fblogs.sap.com%2F2020%2F12%2F08%2Fthe-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology%2F%3Fs_action%3Dss_change_like_status%26nonce%3Dcc893b91af'" title='Like' data-nonce='cc893b91af' data-post-id='1235511'><i class='ds-icon ds-icon--likes-outline ds-icon--regular ds-m-r-xs' tabindex='-1'></i><span class='ds-button-text'>Like</span></button>            <button type="button" class="ds-button ds-button--secondary ds-button--icon-button ds-blog-post__social-action" title="RSS Feed" onclick="location.href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/feed/'">
+              <i class="ds-icon ds-icon--rss-feed ds-icon--regular ds-m-r-xs" tabindex="-1"></i>RSS Feed
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="ds-blog-post__social-row">
+              <div class="ds-blog-post__social-icons">
+                <a href='https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblogs.sap.com%2F2020%2F12%2F08%2Fthe-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology%2F' title='Share on Facebook' target='_blank'><span class='ds-social-icon ds-social-icon--dark-facebook'></span></a><a href='https://twitter.com/share?url=https%3A%2F%2Fblogs.sap.com%2F2020%2F12%2F08%2Fthe-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology%2F&text=The+Beginner%E2%80%99s+Guide+to+SAP+Activate+%E2%80%93+Best+Practices%2C+Guided+Configuration+and+SAP+Activate+Methodology' title='Share on Twitter' target='_blank'><span class='ds-social-icon ds-social-icon--dark-twitter'></span></a><a href='https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblogs.sap.com%2F2020%2F12%2F08%2Fthe-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology%2F&title=The+Beginner%E2%80%99s+Guide+to+SAP+Activate+%E2%80%93+Best+Practices%2C+Guided+Configuration+and+SAP+Activate+Methodology' title='Share on LinkedIn' target='_blank'><span class='ds-social-icon ds-social-icon--dark-linkedin'></span></a>              </div>
+              <div class='ds-tooltip__wrapper'>
+    <div class='ds-tooltip__anchor'>
+    <button
+      type="button"
+      class="ds-button ds-button--secondary ds-blog-post__alert-moderator-button ds-button--disabled"
+      aria-label="Alert Moderator"
+      data-toggle="collapse"
+      data-hide-class="ds-collapse"
+      data-triggers=".alertModerator"
+      aria-expanded="false">Alert Moderator
+    </button>
+    </div>
+    <div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Alerting is not available for unauthorized users</div>
+</div>
+            </div>
+            
+  <div class="wprc-content-v3">
+    <div class="ds-blog-post-form ds-blog-post__alert-moderator-form ds-collapse alertModerator wprc-form-v3" data-toggle="collapseComponent" data-name="alertModerator">
+          </div>
+  </div>
+          </div>
+          <div class="ds-blog-post__right-side-bar ds-flexCol-sm-12 ds-flexCol-md-3">
+            <div id="sapassignedtagswidget-v3-2" class="ds-side-bar-widget ds-assigned-tags ds-m-b-l"><h3 class="ds-side-bar-widget__heading">Assigned Tags</h3></div><div id="sap-relatedcontent-widget-v3-2" class="ds-side-bar-widget widget_sap-relatedcontent-widget-v3"><button type="button" class="ds-side-bar-widget__heading ds-side-bar-widget__heading--collapsible" aria-expanded="true">Similar Blog Posts<i class="ds-icon ds-icon--arrow-up ds-icon--big" tabindex="-1"></i></button><div class="ds-side-bar-widget__content"><ul class="ds-relatedContent ds-relatedContent__list" data-types="blogpost" data-limit="3"></ul></div></div><div id="sap-relatedcontent-widget-v3-3" class="ds-side-bar-widget widget_sap-relatedcontent-widget-v3"><button type="button" class="ds-side-bar-widget__heading ds-side-bar-widget__heading--collapsible" aria-expanded="true">Related Questions<i class="ds-icon ds-icon--arrow-up ds-icon--big" tabindex="-1"></i></button><div class="ds-side-bar-widget__content"><ul class="ds-relatedContent ds-relatedContent__list" data-types="question" data-limit="3"></ul></div></div>          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="content-lightbox-modal"aria-modal="true" aria-label="Lightbox gallery opened" role="dialog" tabindex="-1" class="ds-lightbox" data-id="plbox-1235511"><div class="ds-lightbox__box"><div class="ds-lightbox__slideNumber"><span class="ds-lightbox__slideNumber--current"></span>/<span class="ds-lightbox__slideNumber--total"></span></div><div class="ds-lightbox__header"><a href="javascript:void(0);" data-id="plbox-1235511" class="ds-lightbox__headerIcon ds-icon-encoded--close" aria-label="Close lightbox"></a></div><div class="ds-lightbox__content--scrollable ds-lightbox__content"><div class="ds-lightbox__slide"><img class="ds-lightbox__slide--img" src="https://blogs.sap.com/wp-content/uploads/2020/12/SAP-Best-Practices.jpg" alt="SAP%20Best%20Practices"/></div><div class="ds-lightbox__slide"><img class="ds-lightbox__slide--img" src="https://blogs.sap.com/wp-content/uploads/2020/12/Guided-Configurations.jpg" alt="Guided%20Configuration"/></div><div class="ds-lightbox__slide"><img class="ds-lightbox__slide--img" src="https://blogs.sap.com/wp-content/uploads/2020/12/Difference-between-SAP-ActivateLaunchASAP.jpg" alt="Difference%20between%20SAP%20Activate/Launch/ASAP"/></div><div class="ds-lightbox__slide"><img class="ds-lightbox__slide--img" src="https://blogs.sap.com/wp-content/uploads/2020/12/SAP-Activate.jpg" alt="SAP%20Activate%20Methodology"/></div><a class="lightbox-gallery-button--prev ds-lightbox__gallery-button ds-icon ds-icon--arrow-left" href="javascript:void(0);" aria-label="Show previous image"></a><a class="ds-lightbox__gallery-button lightbox-gallery-button--next ds-icon ds-icon--arrow-right" href="javascript:void(0);" aria-label="Show next image"></a></div><div class="zoom-buttons"><a class="ds-lightbox__zoom-out" href="javascript:void(0);" aria-label="Enter to zoom out"><i class="ds-icon ds-icon--minus"></i></a><a class="ds-lightbox__zoom-in" href="javascript:void(0);" aria-label="Enter to zoom in"><i class="ds-icon ds-icon--plus"></i></a></div></div></div>
+  <div class="ds-blog-post__comment-section">
+    <div class="ds-flexGrid">
+      <div class="ds-flexRow">
+        <div class="ds-flexCol-12 ds-flexCol-md-10 ds-flexCol-lg-10">
+          
+<div id="comments" class="ds-blog-post-comments">
+  
+      <div class="ds-blog-post-comments__counter" title="Number of Comments">
+      28 Comments      </div>
+              <div class="dm-section dm-align-center dm-section-header__title" title="Please log on to comment" aria-role="alert">
+                You must be <a href="https://blogs.sap.com/wp-login.php?redirect_to=2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology" class="opener js-idspopup" rel="IDS_login" title="Log On">Logged on</a> to comment or reply to a post.
+        </div>
+      
+    <div class="ds-blog-post-comments__list">
+              <div class="comment byuser comment-author-jtalati even thread-even depth-1 ds-blog-post-comment" id="li-comment-543350">
+        <div id="comment-543350" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/jtalati">
+                <img alt='Author&#039;s profile photo Hitesh Talati' src='https://avatars.services.sap.com/images/jtalati_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Hitesh Talati' href='https://people.sap.com/jtalati' rel='external nofollow' class='ds-link ds-user__name ' >Hitesh Talati</a>                  </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2020-12-09T20:38:20+00:00"
+                >December 9, 2020 at 8:38 pm</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Nice summary</p>
+              </div>
+
+            <div id="comment-actions-543350" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_543350" tabindex="-1">Like 1</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-543350'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            <div class="ds-blog-post-comment__comments">
+    <div class="comment byuser comment-author-mohitravishankar bypostauthor odd alt depth-2 ds-blog-post-comment" id="li-comment-543472">
+        <div id="comment-543472" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/mohitravishankar">
+                <img alt='Author&#039;s profile photo Mohit Ravi Shankar' src='https://avatars.services.sap.com/images/mohitravishankar_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Mohit Ravi Shankar' href='https://people.sap.com/mohitravishankar' rel='external nofollow' class='ds-link ds-user__name ' >Mohit Ravi Shankar</a> <div class="ds-user__note">Blog Post Author</div>                 </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2020-12-10T12:07:17+00:00"
+                >December 10, 2020 at 12:07 pm</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Thank you, <a href="https://people.sap.com/jtalati" rel="nofollow ugc">Hitesh Talati</a> !</p>
+              </div>
+
+            <div id="comment-actions-543472" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_543472" tabindex="-1">Like 0</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-543472'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            </div><!-- #comment-## -->
+</div><!-- .children -->
+</div><!-- #comment-## -->
+    <div class="comment byuser comment-author-ashfaqali02 even thread-odd thread-alt depth-1 ds-blog-post-comment" id="li-comment-543394">
+        <div id="comment-543394" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/ashfaq.ali02">
+                <img alt='Author&#039;s profile photo Ashfaq Ali' src='https://avatars.services.sap.com/images/ashfaq.ali02_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Ashfaq Ali' href='https://people.sap.com/ashfaq.ali02' rel='external nofollow' class='ds-link ds-user__name ' >Ashfaq Ali</a>                  </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2020-12-10T04:58:30+00:00"
+                >December 10, 2020 at 4:58 am</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Excellent !  This is Good Summary.</p>
+              </div>
+
+            <div id="comment-actions-543394" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_543394" tabindex="-1">Like 1</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-543394'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            <div class="ds-blog-post-comment__comments">
+    <div class="comment byuser comment-author-mohitravishankar bypostauthor odd alt depth-2 ds-blog-post-comment" id="li-comment-543473">
+        <div id="comment-543473" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/mohitravishankar">
+                <img alt='Author&#039;s profile photo Mohit Ravi Shankar' src='https://avatars.services.sap.com/images/mohitravishankar_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Mohit Ravi Shankar' href='https://people.sap.com/mohitravishankar' rel='external nofollow' class='ds-link ds-user__name ' >Mohit Ravi Shankar</a> <div class="ds-user__note">Blog Post Author</div>                 </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2020-12-10T12:08:07+00:00"
+                >December 10, 2020 at 12:08 pm</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Thank you, <a href="https://people.sap.com/ashfaq.ali02" rel="nofollow ugc">Ashfaq Ali</a> !</p>
+              </div>
+
+            <div id="comment-actions-543473" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_543473" tabindex="-1">Like 0</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-543473'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            </div><!-- #comment-## -->
+</div><!-- .children -->
+</div><!-- #comment-## -->
+    <div class="comment byuser comment-author-koensabben even thread-even depth-1 ds-blog-post-comment" id="li-comment-543454">
+        <div id="comment-543454" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/koen.sabben">
+                <img alt='Author&#039;s profile photo Koen Sabben' src='https://avatars.services.sap.com/images/koen.sabben_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Koen Sabben' href='https://people.sap.com/koen.sabben' rel='external nofollow' class='ds-link ds-user__name ' >Koen Sabben</a>  <div class="ds-user__roles"><i class="ds-user__role ds-user__role--employee" title="This user is an SAP Employee" data-role-name="SAP Employee"></i></div>                </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2020-12-10T10:24:24+00:00"
+                >December 10, 2020 at 10:24 am</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Thanks for sharing. I like to share my vision on the 3 pillars.</p>
+<ol>
+<li>Methodology (SAP Activate Roadmap Viewer)</li>
+<li>Content (Best Practices / Guided procedures - Best Practice Explorer)</li>
+<li>Tooling (SAP Solution Manager, Focused Solutions and Cloud ALM)</li>
+</ol>
+<p>Please take this in consideration.</p>
+              </div>
+
+            <div id="comment-actions-543454" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_543454" tabindex="-1">Like 7</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-543454'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            <div class="ds-blog-post-comment__comments">
+    <div class="comment byuser comment-author-mohitravishankar bypostauthor odd alt depth-2 ds-blog-post-comment" id="li-comment-543474">
+        <div id="comment-543474" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/mohitravishankar">
+                <img alt='Author&#039;s profile photo Mohit Ravi Shankar' src='https://avatars.services.sap.com/images/mohitravishankar_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Mohit Ravi Shankar' href='https://people.sap.com/mohitravishankar' rel='external nofollow' class='ds-link ds-user__name ' >Mohit Ravi Shankar</a> <div class="ds-user__note">Blog Post Author</div>                 </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2020-12-10T12:09:08+00:00"
+                >December 10, 2020 at 12:09 pm</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>I love this! Cheers, <a href="https://people.sap.com/koen.sabben" rel="nofollow ugc">Koen Sabben</a> !</p>
+              </div>
+
+            <div id="comment-actions-543474" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_543474" tabindex="-1">Like 0</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-543474'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            </div><!-- #comment-## -->
+</div><!-- .children -->
+</div><!-- #comment-## -->
+    <div class="comment byuser comment-author-jarleynascimentogonalves even thread-odd thread-alt depth-1 ds-blog-post-comment" id="li-comment-544779">
+        <div id="comment-544779" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/jarley.nascimentogonalves">
+                <img alt='Author&#039;s profile photo Jarlei Nascimento Gonçalves' src='https://avatars.services.sap.com/images/jarley.nascimentogonalves_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Jarlei Nascimento Gonçalves' href='https://people.sap.com/jarley.nascimentogonalves' rel='external nofollow' class='ds-link ds-user__name ' >Jarlei Nascimento Gonçalves</a>                  </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2020-12-16T11:04:41+00:00"
+                >December 16, 2020 at 11:04 am</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>My contribution to Activate topics-&gt; https://www.linkedin.com/pulse/sap-activate-agile-really-works-save-time-jarlei-n/</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+              </div>
+
+            <div id="comment-actions-544779" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_544779" tabindex="-1">Like 0</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-544779'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            <div class="ds-blog-post-comment__comments">
+    <div class="comment byuser comment-author-acanceladosap odd alt depth-2 ds-blog-post-comment" id="li-comment-544823">
+        <div id="comment-544823" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/acanceladosap">
+                <img alt='Author&#039;s profile photo Alberto Cancelado Gonzalez' src='https://avatars.services.sap.com/images/acanceladosap_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Alberto Cancelado Gonzalez' href='https://people.sap.com/acanceladosap' rel='external nofollow' class='ds-link ds-user__name ' >Alberto Cancelado Gonzalez</a>                  </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2020-12-16T14:16:17+00:00"
+                >December 16, 2020 at 2:16 pm</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Very interesting SAP Activate Nutshell <a href="https://people.sap.com/jarley.nascimentogonalves" rel="nofollow ugc">Jarlei Nascimento Gonçalves</a></p>
+              </div>
+
+            <div id="comment-actions-544823" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_544823" tabindex="-1">Like 0</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-544823'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            </div><!-- #comment-## -->
+</div><!-- .children -->
+</div><!-- #comment-## -->
+    <div class="comment byuser comment-author-acanceladosap even thread-even depth-1 ds-blog-post-comment" id="li-comment-544826">
+        <div id="comment-544826" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/acanceladosap">
+                <img alt='Author&#039;s profile photo Alberto Cancelado Gonzalez' src='https://avatars.services.sap.com/images/acanceladosap_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Alberto Cancelado Gonzalez' href='https://people.sap.com/acanceladosap' rel='external nofollow' class='ds-link ds-user__name ' >Alberto Cancelado Gonzalez</a>                  </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2020-12-16T14:17:49+00:00"
+                >December 16, 2020 at 2:17 pm</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Very interesting SAP Activate Nutshell @<a class="dm-author__name " href="https://people.sap.com/mohitravishankar" aria-label="Author name Mohit Ravi Shankar" rel="nofollow ugc">Mohit Ravi Shankar</a>. Thanks a lot for sharing.</p>
+              </div>
+
+            <div id="comment-actions-544826" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_544826" tabindex="-1">Like 1</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-544826'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            <div class="ds-blog-post-comment__comments">
+    <div class="comment byuser comment-author-mohitravishankar bypostauthor odd alt depth-2 ds-blog-post-comment" id="li-comment-546682">
+        <div id="comment-546682" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/mohitravishankar">
+                <img alt='Author&#039;s profile photo Mohit Ravi Shankar' src='https://avatars.services.sap.com/images/mohitravishankar_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Mohit Ravi Shankar' href='https://people.sap.com/mohitravishankar' rel='external nofollow' class='ds-link ds-user__name ' >Mohit Ravi Shankar</a> <div class="ds-user__note">Blog Post Author</div>                 </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2021-01-04T07:48:53+00:00"
+                >January 4, 2021 at 7:48 am</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Thanks a lot, <a href="https://people.sap.com/acanceladosap" rel="nofollow ugc">Alberto Cancelado Gonzalez</a> !</p>
+              </div>
+
+            <div id="comment-actions-546682" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_546682" tabindex="-1">Like 0</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-546682'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            </div><!-- #comment-## -->
+</div><!-- .children -->
+</div><!-- #comment-## -->
+    <div class="comment byuser comment-author-sumitjais even thread-odd thread-alt depth-1 ds-blog-post-comment" id="li-comment-544830">
+        <div id="comment-544830" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/sumitjais">
+                <img alt='Author&#039;s profile photo Sumit Jaiswal' src='https://avatars.services.sap.com/images/sumitjais_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Sumit Jaiswal' href='https://people.sap.com/sumitjais' rel='external nofollow' class='ds-link ds-user__name ' >Sumit Jaiswal</a>                  </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2020-12-16T14:30:56+00:00"
+                >December 16, 2020 at 2:30 pm</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Worth reading. Thanks Mohit !</p>
+              </div>
+
+            <div id="comment-actions-544830" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_544830" tabindex="-1">Like 1</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-544830'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            <div class="ds-blog-post-comment__comments">
+    <div class="comment byuser comment-author-mohitravishankar bypostauthor odd alt depth-2 ds-blog-post-comment" id="li-comment-546684">
+        <div id="comment-546684" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/mohitravishankar">
+                <img alt='Author&#039;s profile photo Mohit Ravi Shankar' src='https://avatars.services.sap.com/images/mohitravishankar_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Mohit Ravi Shankar' href='https://people.sap.com/mohitravishankar' rel='external nofollow' class='ds-link ds-user__name ' >Mohit Ravi Shankar</a> <div class="ds-user__note">Blog Post Author</div>                 </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2021-01-04T07:50:24+00:00"
+                >January 4, 2021 at 7:50 am</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Thanks a lot, <a href="https://people.sap.com/sumitjais" rel="nofollow ugc">Sumit Jaiswal</a> !</p>
+              </div>
+
+            <div id="comment-actions-546684" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_546684" tabindex="-1">Like 0</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-546684'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            </div><!-- #comment-## -->
+</div><!-- .children -->
+</div><!-- #comment-## -->
+    <div class="comment byuser comment-author-joeltrinidade even thread-even depth-1 ds-blog-post-comment" id="li-comment-578778">
+        <div id="comment-578778" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/joel.trinidade">
+                <img alt='Author&#039;s profile photo Joel Trinidade' src='https://avatars.services.sap.com/images/joel.trinidade_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Joel Trinidade' href='https://people.sap.com/joel.trinidade' rel='external nofollow' class='ds-link ds-user__name ' >Joel Trinidade</a>                  </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2021-06-29T11:10:28+00:00"
+                >June 29, 2021 at 11:10 am</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Hi, Is this methodology built into Focus build?</p>
+              </div>
+
+            <div id="comment-actions-578778" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_578778" tabindex="-1">Like 0</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-578778'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            <div class="ds-blog-post-comment__comments">
+    <div class="comment byuser comment-author-koensabben odd alt depth-2 ds-blog-post-comment" id="li-comment-581741">
+        <div id="comment-581741" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/koen.sabben">
+                <img alt='Author&#039;s profile photo Koen Sabben' src='https://avatars.services.sap.com/images/koen.sabben_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Koen Sabben' href='https://people.sap.com/koen.sabben' rel='external nofollow' class='ds-link ds-user__name ' >Koen Sabben</a>  <div class="ds-user__roles"><i class="ds-user__role ds-user__role--employee" title="This user is an SAP Employee" data-role-name="SAP Employee"></i></div>                </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2021-07-19T20:29:41+00:00"
+                >July 19, 2021 at 8:29 pm</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Yes sure.</p>
+<p>find how on the focused build support page and the guide on this topic. <br /><a href="https://support.sap.com/en/alm/focused-build.html" rel="nofollow ugc"  target="_blank">https://support.sap.com/en/alm/focused-build.html</a></p>
+<p>How focused build and SAP Activate work together.</p>
+<p>https://support.sap.com/content/dam/support/en_us/library/ssp/alm/sap-solution-manager/focused-solutions/Focused_Build/sp06/SAP%20Activate%20and%20FB%20with%20SolMan%20-%20Working%20Together.pdf </p>
+              </div>
+
+            <div id="comment-actions-581741" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_581741" tabindex="-1">Like 1</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-581741'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            </div><!-- #comment-## -->
+</div><!-- .children -->
+</div><!-- #comment-## -->
+    <div class="comment byuser comment-author-taggarwal even thread-odd thread-alt depth-1 ds-blog-post-comment" id="li-comment-581740">
+        <div id="comment-581740" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/taggarwal">
+                <img alt='Author&#039;s profile photo Tanvi Aggarwal' src='https://avatars.services.sap.com/images/taggarwal_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Tanvi Aggarwal' href='https://people.sap.com/taggarwal' rel='external nofollow' class='ds-link ds-user__name ' >Tanvi Aggarwal</a>                  </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2021-07-19T20:01:37+00:00"
+                >July 19, 2021 at 8:01 pm</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Thank you so much! It was really good</p>
+              </div>
+
+            <div id="comment-actions-581740" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_581740" tabindex="-1">Like 0</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-581740'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            <div class="ds-blog-post-comment__comments">
+    <div class="comment byuser comment-author-mohitravishankar bypostauthor odd alt depth-2 ds-blog-post-comment" id="li-comment-611711">
+        <div id="comment-611711" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/mohitravishankar">
+                <img alt='Author&#039;s profile photo Mohit Ravi Shankar' src='https://avatars.services.sap.com/images/mohitravishankar_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Mohit Ravi Shankar' href='https://people.sap.com/mohitravishankar' rel='external nofollow' class='ds-link ds-user__name ' >Mohit Ravi Shankar</a> <div class="ds-user__note">Blog Post Author</div>                 </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2022-02-15T17:05:46+00:00"
+                >February 15, 2022 at 5:05 pm</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Hi Tanvi,</p>
+<p>&nbsp;</p>
+<p>Thank you very much!</p>
+              </div>
+
+            <div id="comment-actions-611711" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_611711" tabindex="-1">Like 0</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-611711'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            </div><!-- #comment-## -->
+</div><!-- .children -->
+</div><!-- #comment-## -->
+    <div class="comment byuser comment-author-sbesta even thread-even depth-1 ds-blog-post-comment" id="li-comment-601759">
+        <div id="comment-601759" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/sbesta">
+                <img alt='Author&#039;s profile photo SRINIVASULU BESTA' src='https://avatars.services.sap.com/images/sbesta_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name SRINIVASULU BESTA' href='https://people.sap.com/sbesta' rel='external nofollow' class='ds-link ds-user__name ' >SRINIVASULU BESTA</a>                  </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2021-12-04T06:14:51+00:00"
+                >December 4, 2021 at 6:14 am</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>HI Mohit,</p>
+<p>&nbsp;</p>
+<p>Nice blog to get an overview on SAP Activate . Thanks for sharing</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Regards,</p>
+<p>Srinivas</p>
+              </div>
+
+            <div id="comment-actions-601759" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_601759" tabindex="-1">Like 0</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-601759'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            <div class="ds-blog-post-comment__comments">
+    <div class="comment byuser comment-author-mohitravishankar bypostauthor odd alt depth-2 ds-blog-post-comment" id="li-comment-611710">
+        <div id="comment-611710" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/mohitravishankar">
+                <img alt='Author&#039;s profile photo Mohit Ravi Shankar' src='https://avatars.services.sap.com/images/mohitravishankar_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Mohit Ravi Shankar' href='https://people.sap.com/mohitravishankar' rel='external nofollow' class='ds-link ds-user__name ' >Mohit Ravi Shankar</a> <div class="ds-user__note">Blog Post Author</div>                 </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2022-02-15T17:05:11+00:00"
+                >February 15, 2022 at 5:05 pm</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>My pleasure, Srinivasulu!</p>
+              </div>
+
+            <div id="comment-actions-611710" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_611710" tabindex="-1">Like 0</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-611710'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            </div><!-- #comment-## -->
+</div><!-- .children -->
+</div><!-- #comment-## -->
+    <div class="comment byuser comment-author-cal75 even thread-odd thread-alt depth-1 ds-blog-post-comment" id="li-comment-609818">
+        <div id="comment-609818" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/cal75">
+                <img alt='Author&#039;s profile photo Caroline Didriksson' src='https://avatars.services.sap.com/images/cal75_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Caroline Didriksson' href='https://people.sap.com/cal75' rel='external nofollow' class='ds-link ds-user__name ' >Caroline Didriksson</a>                  </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2022-02-03T15:18:39+00:00"
+                >February 3, 2022 at 3:18 pm</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Hi Mohit</p>
+<p>Thanks for a very good summary of Activate.</p>
+<p>You wrote there is a migration template. In which of the Roadmaps can I find that?</p>
+<p>&nbsp;</p>
+<p>Thanks.</p>
+<p>Kind regards,</p>
+<p>Caroline</p>
+              </div>
+
+            <div id="comment-actions-609818" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_609818" tabindex="-1">Like 0</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-609818'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            <div class="ds-blog-post-comment__comments">
+    <div class="comment byuser comment-author-mohitravishankar bypostauthor odd alt depth-2 ds-blog-post-comment" id="li-comment-611709">
+        <div id="comment-611709" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/mohitravishankar">
+                <img alt='Author&#039;s profile photo Mohit Ravi Shankar' src='https://avatars.services.sap.com/images/mohitravishankar_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Mohit Ravi Shankar' href='https://people.sap.com/mohitravishankar' rel='external nofollow' class='ds-link ds-user__name ' >Mohit Ravi Shankar</a> <div class="ds-user__note">Blog Post Author</div>                 </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2022-02-15T17:04:50+00:00"
+                >February 15, 2022 at 5:04 pm</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Thank you, Caroline!</p>
+<p>When you have an active system, you can download the migration cockpit if possible. That is how I usually went about with standard implementations!</p>
+<p>This link might be useful! https://help.sap.com/viewer/d5aa3caabab04bb68d9cc3352d003330/SHIP/en-US/b8d3c4714d324d3182532a3f6ce63abb.html</p>
+<p>&nbsp;</p>
+              </div>
+
+            <div id="comment-actions-611709" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_611709" tabindex="-1">Like 0</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-611709'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            </div><!-- #comment-## -->
+</div><!-- .children -->
+</div><!-- #comment-## -->
+    <div class="comment byuser comment-author-roble88jr even thread-even depth-1 ds-blog-post-comment" id="li-comment-610068">
+        <div id="comment-610068" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/roble88jr">
+                <img alt='Author&#039;s profile photo Jorge Robledillo Extremera' src='https://avatars.services.sap.com/images/roble88jr_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Jorge Robledillo Extremera' href='https://people.sap.com/roble88jr' rel='external nofollow' class='ds-link ds-user__name ' >Jorge Robledillo Extremera</a>                  </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2022-02-05T07:35:42+00:00"
+                >February 5, 2022 at 7:35 am</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Really nice summary, good job!</p>
+              </div>
+
+            <div id="comment-actions-610068" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_610068" tabindex="-1">Like 0</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-610068'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            <div class="ds-blog-post-comment__comments">
+    <div class="comment byuser comment-author-mohitravishankar bypostauthor odd alt depth-2 ds-blog-post-comment" id="li-comment-611708">
+        <div id="comment-611708" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/mohitravishankar">
+                <img alt='Author&#039;s profile photo Mohit Ravi Shankar' src='https://avatars.services.sap.com/images/mohitravishankar_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Mohit Ravi Shankar' href='https://people.sap.com/mohitravishankar' rel='external nofollow' class='ds-link ds-user__name ' >Mohit Ravi Shankar</a> <div class="ds-user__note">Blog Post Author</div>                 </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2022-02-15T16:58:58+00:00"
+                >February 15, 2022 at 4:58 pm</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Thank you very much, Jorge!</p>
+              </div>
+
+            <div id="comment-actions-611708" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_611708" tabindex="-1">Like 0</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-611708'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            </div><!-- #comment-## -->
+</div><!-- .children -->
+</div><!-- #comment-## -->
+    <div class="comment byuser comment-author-simonpolovinaecom even thread-odd thread-alt depth-1 ds-blog-post-comment" id="li-comment-611693">
+        <div id="comment-611693" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/simon.polovina.ecom">
+                <img alt='Author&#039;s profile photo Simon Polovina' src='https://avatars.services.sap.com/images/simon.polovina.ecom_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Simon Polovina' href='https://people.sap.com/simon.polovina.ecom' rel='external nofollow' class='ds-link ds-user__name ' >Simon Polovina</a>                  </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2022-02-15T15:43:14+00:00"
+                >February 15, 2022 at 3:43 pm</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Nice summary. Any insights on how Activate works with the following? i.e.:</p>
+<ol>
+<li>RISE</li>
+<li>BTP</li>
+</ol>
+<p>thanks!</p>
+              </div>
+
+            <div id="comment-actions-611693" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_611693" tabindex="-1">Like 0</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-611693'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            <div class="ds-blog-post-comment__comments">
+    <div class="comment byuser comment-author-mohitravishankar bypostauthor odd alt depth-2 ds-blog-post-comment" id="li-comment-611712">
+        <div id="comment-611712" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/mohitravishankar">
+                <img alt='Author&#039;s profile photo Mohit Ravi Shankar' src='https://avatars.services.sap.com/images/mohitravishankar_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Mohit Ravi Shankar' href='https://people.sap.com/mohitravishankar' rel='external nofollow' class='ds-link ds-user__name ' >Mohit Ravi Shankar</a> <div class="ds-user__note">Blog Post Author</div>                 </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2022-02-15T17:08:46+00:00"
+                >February 15, 2022 at 5:08 pm</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Hi Simon,</p>
+<p>&nbsp;</p>
+<p>Try checking the below links:</p>
+<ol>
+<li>RISE: https://go.support.sap.com/roadmapviewer/#/group/658F507A-D6F5-4B78-9EE1-0300C5F1E40F/roadmapContentPage/a11ec6d657054bf9:t2</li>
+<li>BTP: https://blogs.sap.com/2021/07/29/from-discover-to-implementation-with-sap-btp-sap-community-call-recap-resources/ Seems like the standard Activate for S/4 implementations works!</li>
+</ol>
+<p>Hope this helps!</p>
+              </div>
+
+            <div id="comment-actions-611712" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_611712" tabindex="-1">Like 1</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-611712'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            <div class="ds-blog-post-comment__comments">
+    <div class="comment byuser comment-author-simonpolovinaecom even depth-3 ds-blog-post-comment" id="li-comment-611740">
+        <div id="comment-611740" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/simon.polovina.ecom">
+                <img alt='Author&#039;s profile photo Simon Polovina' src='https://avatars.services.sap.com/images/simon.polovina.ecom_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Simon Polovina' href='https://people.sap.com/simon.polovina.ecom' rel='external nofollow' class='ds-link ds-user__name ' >Simon Polovina</a>                  </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2022-02-15T20:38:24+00:00"
+                >February 15, 2022 at 8:38 pm</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Thanks, Mohit, they do help!</p>
+              </div>
+
+            <div id="comment-actions-611740" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_611740" tabindex="-1">Like 1</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-611740'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            </div><!-- #comment-## -->
+</div><!-- .children -->
+</div><!-- #comment-## -->
+</div><!-- .children -->
+</div><!-- #comment-## -->
+    <div class="comment byuser comment-author-wallacehenry odd alt thread-even depth-1 ds-blog-post-comment" id="li-comment-612570">
+        <div id="comment-612570" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/wallace.henry">
+                <img alt='Author&#039;s profile photo Wallace Henry' src='https://avatars.services.sap.com/images/wallace.henry_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Wallace Henry' href='https://people.sap.com/wallace.henry' rel='external nofollow' class='ds-link ds-user__name ' >Wallace Henry</a>                  </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2022-02-21T15:26:40+00:00"
+                >February 21, 2022 at 3:26 pm</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>It had been a while since I looked at Activate.</p>
+<p>I like this blog !</p>
+<p>After the blog was created, SAP moved the Activate from Jam to a Community - so check there - it is SAP Activate and you can follow the tag.</p>
+<p>Hoping this helps someone else.</p>
+              </div>
+
+            <div id="comment-actions-612570" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_612570" tabindex="-1">Like 2</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-612570'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            </div><!-- #comment-## -->
+    <div class="comment byuser comment-author-jelenaperfiljeva2 even thread-odd thread-alt depth-1 ds-blog-post-comment" id="li-comment-637109">
+        <div id="comment-637109" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/jelena.perfiljeva2">
+                <img alt='Author&#039;s profile photo Jelena Perfiljeva' src='https://avatars.services.sap.com/images/jelena.perfiljeva2_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Jelena Perfiljeva' href='https://people.sap.com/jelena.perfiljeva2' rel='external nofollow' class='ds-link ds-user__name ' >Jelena Perfiljeva</a>                  </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2022-09-01T04:05:51+00:00"
+                >September 1, 2022 at 4:05 am</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Friends don't let friends use SAP Jam. 🙂 Here is a new link for <a href="https://community.sap.com/topics/activate" rel="nofollow ugc">SAP Activate topic</a>.</p>
+              </div>
+
+            <div id="comment-actions-637109" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_637109" tabindex="-1">Like 0</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-637109'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            </div><!-- #comment-## -->
+    <div class="comment byuser comment-author-soumyade odd alt thread-even depth-1 ds-blog-post-comment" id="li-comment-660633">
+        <div id="comment-660633" class="ds-blog-post-comment__wrapper">
+                    <div class="ds-blog-post-comment__header">
+              <a class="ds-blog-post-comment__avatar" target="_blank" rel="noopener noreferrer" href="https://people.sap.com/soumyade">
+                <img alt='Author&#039;s profile photo Soumya De' src='https://avatars.services.sap.com/images/soumyade_small.png' class='avatar avatar-48 photo ds-avatar-component ds-avatar-component--small' height='48' width='48' />              </a>
+              <div class="ds-blog-post-comment__meta-info">
+                <div class="ds-user ds-blog-post-comment__author">
+                  <a target='_blank' aria-label='Author name Soumya De' href='https://people.sap.com/soumyade' rel='external nofollow' class='ds-link ds-user__name ' >Soumya De</a>                  </div>
+                <span class="ds-blog-post-comment__date"><time datetime="2023-02-17T05:10:21+00:00"
+                >February 17, 2023 at 5:10 am</time></span>
+              </div>
+            </div>
+
+            <div class="ds-blog-post-comment__body">
+              <div class="ds-blog-post-comment__content ds-editor-content">
+                <p>Very useful document...</p>
+<p>Thanks !!!!</p>
+              </div>
+
+            <div id="comment-actions-660633" class="comment-actions ds-blog-post-comment__actions">
+                <ul class="ds-content-actionbar ds-actionbar--links" role="menubar" aria-label="action menu">
+                    <!-- render like, reply, edit, delete links -->
+                    <li class='ds-content-actionbar__item'><span class='ds-link ds-button--link ds-content-actionbar__link ds-button--disabled'><div class="ds-button__inner-container " id="nbLikeComment_660633" tabindex="-1">Like 0</span></span></li><li class='ds-content-actionbar__item'><div class='ds-tooltip__wrapper'><div class='ds-tooltip__anchor'><a class='ds-link ds-button--link ds-content-actionbar__link'  href='https://blogs.sap.com/2020/12/08/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology/#comment-660633'>Share</a></div><div role='tooltip' class='ds-tooltip ds-tooltip--bottom'>Right click and copy the link to share this comment</div></div></li>                </ul>
+                <div class="ds-actionbar--forms"></div>
+            </div>
+          </div>
+        </div>
+            </div><!-- #comment-## -->
+
+      
+        </div> <!-- main comments content area -->
+
+    
+            
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+                </div> <!-- #main -->
+                <div id="shared_footer" class="dm-container dm-wrapper">
+                    <footer class="dm-footer">
+    <div class="dm-footer__inner-wrapper">
+        <div class="dm-socialmedia">
+            <h5 class="dm-socialmedia__headline" id="hl-sharefollow">Find us on</h5>
+            <ul class="dm-socialmedia__links" aria-labelledby="hl-sharefollow">
+                <li><a href="https://www.facebook.com/sapcommunity" title="Facebook"><span class="dm-icon-encoded--facebook"></span></a></li>
+                <li><a href="https://twitter.com/SAPCommunity" title="Twitter"><span class="dm-icon-encoded--twitter"></span></a></li>
+                <li><a href="https://www.youtube.com/c/SAPCommunities" title="YouTube"><span class="dm-icon-encoded--youtube"></span></a></li>
+                <li><a href="https://www.linkedin.com/company/sap" title="LinkedIn"><span class="dm-icon-encoded--linkedin"></span></a></li>
+                <li><a href="https://instagram.com/sap/" title="Instagram"><span class="dm-icon-encoded--instagram"></span></a></li>
+                <li><a href="http://www.slideshare.net/SAP" title="Slideshare"><span class="dm-icon-encoded--slideshare"></span></a></li>
+                <li><a href="mailto:?subject='SAP Community'" title="Email Share"><span class="dm-icon-encoded--email"></span></a></li>
+            </ul>
+        </div>
+        <nav role="navigation" class="dm-footer__navigation">
+            <ul class="dm-footer__navigation__list" aria-label="footer navigation">
+                <li><a href="https://community.sap.com/resources/sap-community-privacy-statement" target="_blank">Privacy</a></li>
+                <li><a href="http://sap.com/corporate/en/legal/terms-of-use.html" target="_blank">Terms of Use</a></li>
+                <li><a href="http://sap.com/about/legal/impressum.html" target="_blank">Legal Disclosure</a></li>
+                <li><a href="http://sap.com/about/legal/copyright.html" target="_blank">Copyright</a></li>
+                <li><a href="http://sap.com/about/legal/trademark.html" target="_blank">Trademark</a></li>
+                <li id="teconsent"></li>
+                <li><a href="https://www.sap.com/cmp/nl/sap-community-voice/index.html" target="_blank">Newsletter</a></li>
+                <li><a href="https://community.sap.com/support" target="_blank">Support</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>                </div>
+            </div> <!-- #page -->
+            <script type="application/ld+json" data-schema="1235511-post-Default">{"@context":"https:\/\/schema.org\/","@type":"BlogPosting","@id":"https:\/\/blogs.sap.com\/2020\/12\/08\/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology\/#BlogPosting","mainEntityOfPage":"https:\/\/blogs.sap.com\/2020\/12\/08\/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology\/","headline":"The Beginner\u2019s Guide to SAP Activate \u2013 Best Practices, Guided Configuration and SAP Activate Methodology","name":"The Beginner\u2019s Guide to SAP Activate \u2013 Best Practices, Guided Configuration and SAP Activate Methodology","description":"Project Management is something every one of us has done in our lives. Be it researching and completing your school and university assignments by the given deadline to organising your day to meet with friends [&hellip;]","datePublished":"2020-12-08","dateModified":"2023-05-10","author":{"@type":"Person","@id":"https:\/\/blogs.sap.com\/author\/mohitravishankar\/#Person","name":"Mohit Ravi Shankar","url":"https:\/\/blogs.sap.com\/author\/mohitravishankar\/","image":{"@type":"ImageObject","@id":"https:\/\/avatars.services.sap.com\/images\/mohitravishankar_small.png","url":"https:\/\/avatars.services.sap.com\/images\/mohitravishankar_small.png","height":96,"width":96}},"publisher":{"@type":"Organization","name":"SAP Community Blogs","logo":{"@type":"ImageObject","@id":"https:\/\/blogs.sap.com\/wp-content\/uploads\/2020\/03\/SAP_scrn_R-2.png","url":"https:\/\/blogs.sap.com\/wp-content\/uploads\/2020\/03\/SAP_scrn_R-2.png","width":600,"height":60}},"image":{"@type":"ImageObject","@id":"https:\/\/blogs.sap.com\/wp-content\/uploads\/2020\/12\/SAP-Best-Practices.jpg","url":"https:\/\/blogs.sap.com\/wp-content\/uploads\/2020\/12\/SAP-Best-Practices.jpg","height":"","width":""},"url":"https:\/\/blogs.sap.com\/2020\/12\/08\/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology\/","about":["Product Information"],"wordCount":2650,"keywords":["agile","agile project management","project management","sap activate","SAP Activate Methodology"]}</script>
+<script type="application/ld+json" data-schema="Breadcrumb">{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"2020","item":"https:\/\/blogs.sap.com\/2020\/#breadcrumbitem"},{"@type":"ListItem","position":2,"name":"12","item":"https:\/\/blogs.sap.com\/2020\/\/12\/#breadcrumbitem"},{"@type":"ListItem","position":3,"name":"08","item":"https:\/\/blogs.sap.com\/2020\/\/12\/\/08\/#breadcrumbitem"},{"@type":"ListItem","position":4,"name":"The Beginner\u2019s Guide to SAP Activate \u2013 Best Practices, Guided Configuration and SAP Activate Methodology","item":"https:\/\/blogs.sap.com\/2020\/12\/08\/the-beginners-guide-to-sap-activate-best-practices-guided-configuration-and-sap-activate-methodology\/#breadcrumbitem"}]}</script>
+<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-content/plugins/sap-comment-editor/js/action-tooltip-handler.min.js' id='tooltip-handler-js'></script>
+<script type='text/javascript' id='unified_header-js-extra'>
+/* <![CDATA[ */
+var headerInitArgs = {"system":"blogs","wrapperID":"page","breadcrumbItems":[{"text":"Blogs","href":"https:\/\/blogs.sap.com"}]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://static.community.services.sap/com-hdr/v10/282.116.60/shared-ui/1dx-assets/js/scn-header.min.js' id='unified_header-js'></script>
+<script type='text/javascript' id='unified_header-js-after'>
+            scnHeader.init(headerInitArgs);
+            setCookie("userArgs", headerInitArgs.user ? JSON.stringify(headerInitArgs.user) : "", { path : "/" });
+    
+</script>
+<script type='text/javascript' src='https://static.community.services.sap/designmate/v3/241/latest/header.js' id='designmate_header_script-js'></script>
+<script type='text/javascript' src='https://static.community.services.sap/designmate/v3/241/latest/subheader.js' id='designmate_subheader_script-js'></script>
+<script type='text/javascript' src='https://static.community.services.sap/designmate/v3/241/latest/designmate.js' id='designmate_script-js'></script>
+<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-includes/js/comment-reply.min.js' id='comment-reply-js'></script>
+<script type='text/javascript' id='satm_handler-js-extra'>
+/* <![CDATA[ */
+var satmContentSelectors = ["div.dm-contentDetail__body-content","div.dm-list-comments__item-content","div.ds-blog-post__body","div.ds-blog-post-comment__content"];
+var satmProfileBaseUrl = "people.sap.com\/";
+var satmUssUrl = "https:\/\/uss.api.community.sap.com";
+var satmChangeableElementsSelectors = ["div.dm-list-comments__item-content","div.ds-blog-post-comment__content"];
+var satmPluginEnabled = "1";
+var satmApiUrl = "https:\/\/uss.api.community.sap.com";
+var satmApiCallWithCredentials = "1";
+var satmRequestDelayMs = "100";
+/* ]]> */
+</script>
+<script type='text/javascript' defer src='https://blogs.sap.com/res1dx-598/wp-content/plugins/sap-at-mention/js/sap-at-mention.min.js' id='satm_handler-js'></script>
+<script type='text/javascript' id='sap-comment-validation-js-extra'>
+/* <![CDATA[ */
+var commentValidation = {"validateMaxLinks":"1","max_links_number":"7","BLOGS_PAGE":"single"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-content/plugins/sap-comment-editor/js/sap-comment-validation.min.js' id='sap-comment-validation-js'></script>
+<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-content/plugins/sap-core-custom/include/js/sap-post-status.min.js' id='scn_post_status_check-js'></script>
+<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-content/themes/sap-v3-neo/js/jquery-plugins.min.js' id='sap_jquery_plugins-js'></script>
+<script type='text/javascript' id='sap-login-csrf-cookie-js-extra'>
+/* <![CDATA[ */
+var sapLoginCookieConfig = {"cookieName":"SAP_BLOGS_ANONYMOUS_NONCE","sapActionName":"s_action"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-content/plugins/sap-core-custom/include/js/sap-login-csrf-cookie.min.js' id='sap-login-csrf-cookie-js'></script>
+<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-content/plugins/sap-core-custom/include/js/sap-eddl.min.js' id='sap_eddl-js'></script>
+<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-content/plugins/sap-lightbox-gallery/lib/lightbox-gallery.min.js' id='sap_lightbox_gallery_js-js'></script>
+<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-content/themes/sap-v3-neo/js/choices.min.js' id='choices.js-js'></script>
+<script type='text/javascript' id='wprc-script-js-extra'>
+/* <![CDATA[ */
+var wprcajaxhandler = {"ajaxurl":"https:\/\/blogs.sap.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-content/plugins/sap-report-content/static/js/v3/scripts.min.js' id='wprc-script-js'></script>
+<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-content/themes/sap-v3-neo/js/single.min.js' id='sap_single_v3-js'></script>
+<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-content/themes/sap-v3-neo/js/onscroll-sticky.min.js' id='onscroll_sticky-js'></script>
+<script type='text/javascript' id='blog-detail-page-js-extra'>
+/* <![CDATA[ */
+var alertReasonsSelectArgs = {"selectId":"sap-blog-alert-reasons","reasons":["Incorrect Tag\/Category\r","Cross-Posting\r","Private Information\r","Unprofessional Conduct\r","Spam"]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-content/themes/sap-v3-neo/dist/blog-detail.min.js' id='blog-detail-page-js'></script>
+<script type='text/javascript' id='sap_assignedtags_widget_js_v3-js-extra'>
+/* <![CDATA[ */
+var assignedTagsWidgetSettings = {"maxItemsBeforeHide":"7","data":{"SAP Analytics Cloud":"https:\/\/blogs.sap.com\/tags\/67838200100800006884\/","SAP S\/4HANA":"https:\/\/blogs.sap.com\/tags\/73554900100800000266\/","SAP S\/4HANA Cloud":"https:\/\/blogs.sap.com\/tags\/67837800100800007389\/","SAP S\/4HANA Cloud, extended edition":"https:\/\/blogs.sap.com\/tags\/73b37c4d-a4aa-4de9-aeb9-a5dc59710b26\/","SAP SuccessFactors HXM Suite":"https:\/\/blogs.sap.com\/tags\/67838200100800004730\/","SOLMAN Project Management":"https:\/\/blogs.sap.com\/tags\/859834545111167391953063734572784\/","agile":"https:\/\/blogs.sap.com\/tag\/agile\/","agile project management":"https:\/\/blogs.sap.com\/tag\/agile-project-management\/","project management":"https:\/\/blogs.sap.com\/tag\/project-management\/","sap activate":"https:\/\/blogs.sap.com\/tag\/sap-activate\/","SAP Activate Methodology":"https:\/\/blogs.sap.com\/tag\/sap-activate-methodology\/"},"widgetClassname":".ds-assigned-tags"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-content/plugins/sap-widgets/include/assigned-tags/js/sap-assigned-tags-widget.min.js' id='sap_assignedtags_widget_js_v3-js'></script>
+<script type='text/javascript' id='sap_relatedcontent_widget_js_v3-js-extra'>
+/* <![CDATA[ */
+var relatedContentWidgetSettings = {"widgetSelector":".widget_sap-relatedcontent-widget-v3","dataSourceServiceUrl":"https:\/\/searchproxy.api.community.sap.com\/api\/v1\/search\/similar-content","profileUrl":"https:\/\/people.sap.com","targetContentItem":{"id":1235511,"type":"blogpost","title":"The Beginner\u2019s Guide to SAP Activate \u2013 Best Practices, Guided Configuration and SAP Activate Methodology","primary_tag":"67838200100800006884"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-content/plugins/sap-widgets/include/related-content/js/sap-related-content-widget.min.js' id='sap_relatedcontent_widget_js_v3-js'></script>
+<div id="wp-load_tinymce-wrap" class="wp-core-ui wp-editor-wrap tmce-active"><link rel='stylesheet' id='dashicons-css' href='https://blogs.sap.com/res1dx-598/wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='editor-buttons-css' href='https://blogs.sap.com/res1dx-598/wp-includes/css/editor.min.css' type='text/css' media='all' />
+<style>#wp-load_tinymce-wrap {display:none;}</style>
+<div id="wp-load_tinymce-editor-tools" class="wp-editor-tools hide-if-no-js"><div class="wp-editor-tabs"><button type="button" id="load_tinymce-tmce" class="wp-switch-editor switch-tmce" data-wp-editor-id="load_tinymce">Visual</button>
+<button type="button" id="load_tinymce-html" class="wp-switch-editor switch-html" data-wp-editor-id="load_tinymce">Text</button>
+</div>
+</div>
+<div id="wp-load_tinymce-editor-container" class="wp-editor-container"><div id="qt_load_tinymce_toolbar" class="quicktags-toolbar"></div><textarea class="wp-editor-area" rows="20" autocomplete="off" cols="40" name="load_tinymce" id="load_tinymce"></textarea></div>
+</div>
+
+<link rel='preload' href='https://blogs.sap.com/wp-includes/js/tinymce/skins/lightgray/skin.min.css?wp-mce-49110-20201110' as='style'><link rel='preload' href='https://blogs.sap.com/wp-includes/js/tinymce/plugins/codesample/css/prism.css' as='style'><link rel='preload' href='https://blogs.sap.com/wp-includes/js/tinymce/skins/lightgray/content.min.css?wp-mce-49110-20201110' as='style'>
+		<script type="text/javascript">
+		tinyMCEPreInit = {
+			baseURL: "https://blogs.sap.com/wp-includes/js/tinymce",
+			suffix: ".min",
+						mceInit: {'load_tinymce':{theme:"modern",skin:"lightgray",language:"en",formats:{alignleft: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"left"}},{selector: "img,table,dl.wp-caption", classes: "alignleft"}],aligncenter: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"center"}},{selector: "img,table,dl.wp-caption", classes: "aligncenter"}],alignright: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"right"}},{selector: "img,table,dl.wp-caption", classes: "alignright"}],strikethrough: {inline: "del"}},relative_urls:false,remove_script_host:false,convert_urls:false,browser_spellcheck:true,fix_list_elements:true,entities:"38,amp,60,lt,62,gt",entity_encoding:"raw",keep_styles:false,cache_suffix:"wp-mce-49110-20201110",resize:"vertical",menubar:false,branding:false,preview_styles:"font-family font-size font-weight font-style text-decoration text-transform",end_container_on_empty_block:true,wpeditimage_html5_captions:true,wp_lang_attr:"en-US",wp_keep_scroll_position:false,wp_shortcut_labels:{"Heading 1":"access1","Heading 2":"access2","Heading 3":"access3","Heading 4":"access4","Heading 5":"access5","Heading 6":"access6","Paragraph":"access7","Blockquote":"accessQ","Underline":"metaU","Strikethrough":"accessD","Bold":"metaB","Italic":"metaI","Code":"accessX","Align center":"accessC","Align right":"accessR","Align left":"accessL","Justify":"accessJ","Cut":"metaX","Copy":"metaC","Paste":"metaV","Select all":"metaA","Undo":"metaZ","Redo":"metaY","Bullet list":"accessU","Numbered list":"accessO","Insert\/edit image":"accessM","Insert\/edit link":"metaK","Remove link":"accessS","Toolbar Toggle":"accessZ","Insert Read More tag":"accessT","Insert Page Break tag":"accessP","Distraction-free writing mode":"accessW","Add Media":"accessM","Keyboard Shortcuts":"accessH"},content_css:"https://blogs.sap.com/wp-includes/css/dashicons.min.css?ver=598,https://blogs.sap.com/wp-includes/js/tinymce/skins/wordpress/wp-content.css?ver=598,https://blogs.sap.com/wp-content/themes/sap-v3-neo/editor-style.css",plugins:"charmap,colorpicker,hr,lists,media,paste,tabfocus,textcolor,fullscreen,wordpress,wpautoresize,wpeditimage,wpemoji,wpgallery,wplink,wpdialogs,wptextpattern,wpview,image,codesample",external_plugins:{"table":"https:\/\/blogs.sap.com\/wp-content\/plugins\/mce-table-buttons\/tinymce47-table\/plugin.min.js"},selector:"#load_tinymce",wpautop:true,indent:false,toolbar1:"formatselect,bold,italic,bullist,numlist,blockquote,alignleft,aligncenter,alignright,link,spellchecker,fullscreen,wp_adv,codesample",toolbar2:"strikethrough,hr,forecolor,pastetext,removeformat,charmap,outdent,indent,table,undo,redo,wp_help",toolbar3:"",toolbar4:"",tabfocus_elements:":prev,:next",body_class:"load_tinymce post-type-post post-status-publish post-format-standard page-template-default locale-en-us",table_toolbar:"",extended_valid_elements:"div"}},
+			qtInit: {'load_tinymce':{id:"load_tinymce",buttons:"strong,em,link,block,del,ins,img,ul,ol,li,code,more,close"}},
+			ref: {plugins:"charmap,colorpicker,hr,lists,media,paste,tabfocus,textcolor,fullscreen,wordpress,wpautoresize,wpeditimage,wpemoji,wpgallery,wplink,wpdialogs,wptextpattern,wpview,image,codesample",theme:"modern",language:"en"},
+			load_ext: function(url,lang){var sl=tinymce.ScriptLoader;sl.markDone(url+'/langs/'+lang+'.js');sl.markDone(url+'/langs/'+lang+'_dlg.js');}
+		};
+		</script>
+		<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-includes/js/tinymce/tinymce.min.js' id='wp-tinymce-root-js'></script>
+<script type='text/javascript' src='https://blogs.sap.com/res1dx-598/wp-includes/js/tinymce/plugins/compat3x/plugin.min.js' id='wp-tinymce-js'></script>
+<script type='text/javascript'>
+tinymce.addI18n( 'en', {"Ok":"OK","Bullet list":"Bulleted list","Insert\/Edit code sample":"Insert\/edit code sample","Url":"URL","Spellcheck":"Check Spelling","Row properties":"Table row properties","Cell properties":"Table cell properties","Paste row before":"Paste table row before","Paste row after":"Paste table row after","Cut row":"Cut table row","Copy row":"Copy table row","Merge cells":"Merge table cells","Split cell":"Split table cell","Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off.":"Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off.\n\nIf you\u2019re looking to paste rich content from Microsoft Word, try turning this option off. The editor will clean up text pasted from Word automatically.","Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help":"Rich Text Area. Press Alt-Shift-H for help.","You have unsaved changes are you sure you want to navigate away?":"The changes you made will be lost if you navigate away from this page.","Your browser doesn't support direct access to the clipboard. Please use the Ctrl+X\/C\/V keyboard shortcuts instead.":"Your browser does not support direct access to the clipboard. Please use keyboard shortcuts or your browser\u2019s edit menu instead.","Edit|button":"Edit"});
+tinymce.ScriptLoader.markDone( 'https://blogs.sap.com/wp-includes/js/tinymce/langs/en.js' );
+</script>
+<script type='text/javascript' src='https://blogs.sap.com/wp-includes/js/tinymce/langs/wp-langs-en.js?ver=49110-20201110'></script>
+		<script type="text/javascript">
+		tinyMCEPreInit.load_ext("https://blogs.sap.com/wp-content/plugins/mce-table-buttons/tinymce47-table", "en");
+
+var ajaxurl = "/wp-admin/admin-ajax.php";
+		( function() {
+			var init, id, $wrap;
+
+			if ( typeof tinymce !== 'undefined' ) {
+				if ( tinymce.Env.ie && tinymce.Env.ie < 11 ) {
+					tinymce.$( '.wp-editor-wrap ' ).removeClass( 'tmce-active' ).addClass( 'html-active' );
+					return;
+				}
+
+				for ( id in tinyMCEPreInit.mceInit ) {
+					init = tinyMCEPreInit.mceInit[id];
+					$wrap = tinymce.$( '#wp-' + id + '-wrap' );
+
+					if ( ( $wrap.hasClass( 'tmce-active' ) || ! tinyMCEPreInit.qtInit.hasOwnProperty( id ) ) && ! init.wp_skip_init ) {
+						tinymce.init( init );
+
+						if ( ! window.wpActiveEditor ) {
+							window.wpActiveEditor = id;
+						}
+					}
+				}
+			}
+
+			if ( typeof quicktags !== 'undefined' ) {
+				for ( id in tinyMCEPreInit.qtInit ) {
+					quicktags( tinyMCEPreInit.qtInit[id] );
+
+					if ( ! window.wpActiveEditor ) {
+						window.wpActiveEditor = id;
+					}
+				}
+			}
+		}());
+		</script>
+				<div id="wp-link-backdrop" style="display: none"></div>
+		<div id="wp-link-wrap" class="wp-core-ui" style="display: none" role="dialog" aria-labelledby="link-modal-title">
+		<form id="wp-link" tabindex="-1">
+		<input type="hidden" id="_ajax_linking_nonce" name="_ajax_linking_nonce" value="81963b4262" />		<h3 id="link-modal-title">Insert/edit link</h3>
+		<button type="button" id="wp-link-close"><span class="screen-reader-text">Close</span></button>
+		<div id="link-selector">
+			<div id="link-options">
+				<p class="howto" id="wplink-enter-url">Enter the destination URL</p>
+				<div>
+					<label><span>URL</span>
+					<input id="wp-link-url" type="text" aria-describedby="wplink-enter-url" /></label>
+				</div>
+				<div class="wp-link-text-field">
+					<label><span>Link Text</span>
+					<input id="wp-link-text" type="text" /></label>
+				</div>
+				<div class="link-target">
+					<label><span></span>
+					<input type="checkbox" id="wp-link-target" /> Open link in a new tab</label>
+				</div>
+			</div>
+			<p class="howto" id="wplink-link-existing-content">Or link to existing content</p>
+			<div id="search-panel">
+				<div class="link-search-wrapper">
+					<label>
+						<span class="search-label">Search</span>
+						<input type="search" id="wp-link-search" class="link-search-field" autocomplete="off" aria-describedby="wplink-link-existing-content" />
+						<span class="spinner"></span>
+					</label>
+				</div>
+				<div id="search-results" class="query-results" tabindex="0">
+					<ul></ul>
+					<div class="river-waiting">
+						<span class="spinner"></span>
+					</div>
+				</div>
+				<div id="most-recent-results" class="query-results" tabindex="0">
+					<div class="query-notice" id="query-notice-message">
+						<em class="query-notice-default">No search term specified. Showing recent items.</em>
+						<em class="query-notice-hint screen-reader-text">Search or use up and down arrow keys to select an item.</em>
+					</div>
+					<ul></ul>
+					<div class="river-waiting">
+						<span class="spinner"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="submitbox">
+			<div id="wp-link-cancel">
+				<button type="button" class="button">Cancel</button>
+			</div>
+			<div id="wp-link-update">
+				<input type="submit" value="Add Link" class="button button-primary" id="wp-link-submit" name="wp-link-submit">
+			</div>
+		</div>
+		</form>
+		</div>
+		<script type="text/javascript">jQuery(window).on("load", function() {tinymce.codesampleplugin.Prism.highlightAll();});</script><script type='text/javascript'>_satellite.pageBottom();</script>        </div> <!-- .page-wrapper -->
+    </body>
+</html>

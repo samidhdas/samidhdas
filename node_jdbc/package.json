@@ -1,0 +1,11 @@
+{
+  "name": "node_jdbc",
+  "version": "1.0.0",
+  "description": "Test jdbc connection to TOTOPROD",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samidh Das",
+  "license": "ISC"
+}

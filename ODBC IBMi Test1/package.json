@@ -1,0 +1,14 @@
+{
+  "name": "odbc-ibmi-test1",
+  "version": "1.0.0",
+  "description": "Test ODBC connectivity to IBMi DB2 database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samidh Das",
+  "license": "ISC",
+  "dependencies": {
+    "odbc": "^2.4.8"
+  }
+}

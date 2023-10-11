@@ -1,0 +1,16 @@
+{
+  "name": "streamsendpayload",
+  "version": "1.0.0",
+  "description": "Send Payload to an Endpoint using a Lambda Function triggered by a DynamDB stream",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samidh Das",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1433.0",
+    "axios": "^1.5.0",
+    "dns": "^0.2.2"
+  }
+}

@@ -1,0 +1,215 @@
+{
+"Payload": {
+    "Records": [
+        {
+            "eventID": "9451bead5b96b6dfc46767bd05b970f5",
+            "eventName": "INSERT",
+            "eventVersion": "1.1",
+            "eventSource": "aws:dynamodb",
+            "awsRegion": "us-east-2",
+            "dynamodb": {
+                "ApproximateCreationDateTime": 1693085153,
+                "Keys": {
+                    "id": {
+                        "S": "a6b62a15-f9b5-3059-b6f5-9b488ba70caf"
+                    }
+                },
+                "NewImage": {
+                    "event_id": {
+                        "S": "a6b62a15-f9b5-3059-b6f5-9b488ba70caf"
+                    },
+                    "data": {
+                        "M": {
+                            "id": {
+                                "S": "dkrGt5wmHEcxD4JNyFI8VPXoWiKZY"
+                            },
+                            "type": {
+                                "S": "payment"
+                            },
+                            "object": {
+                                "M": {
+                                    "payment": {
+                                        "M": {
+                                            "card_details": {
+                                                "M": {
+                                                    "avs_status": {
+                                                        "S": "AVS_ACCEPTED"
+                                                    },
+                                                    "entry_method": {
+                                                        "S": "KEYED"
+                                                    },
+                                                    "cvv_status": {
+                                                        "S": "CVV_ACCEPTED"
+                                                    },
+                                                    "card_payment_timeline": {
+                                                        "M": {
+                                                            "authorized_at": {
+                                                                "S": "2023-08-26T21:25:48.723Z"
+                                                            }
+                                                        }
+                                                    },
+                                                    "card": {
+                                                        "M": {
+                                                            "last_4": {
+                                                                "S": "5858"
+                                                            },
+                                                            "bin": {
+                                                                "S": "453275"
+                                                            },
+                                                            "card_brand": {
+                                                                "S": "VISA"
+                                                            },
+                                                            "fingerprint": {
+                                                                "S": "sq-1-svLV-mAgsGdsx8PZs8nJy3QyPpJtHrOnpW76hPbRo063QBY7z3fYnR6XOElxHlYHiQ"
+                                                            },
+                                                            "exp_month": {
+                                                                "N": "8"
+                                                            },
+                                                            "prepaid_type": {
+                                                                "S": "NOT_PREPAID"
+                                                            },
+                                                            "exp_year": {
+                                                                "N": "2025"
+                                                            },
+                                                            "card_type": {
+                                                                "S": "CREDIT"
+                                                            }
+                                                        }
+                                                    },
+                                                    "statement_description": {
+                                                        "S": "SQ *SELLER TEST ACCOUNT "
+                                                    },
+                                                    "status": {
+                                                        "S": "AUTHORIZED"
+                                                    }
+                                                }
+                                            },
+                                            "note": {
+                                                "S": "New bathtub for Harrison Ford"
+                                            },
+                                            "capabilities": {
+                                                "L": [
+                                                    {
+                                                        "S": "EDIT_AMOUNT_UP"
+                                                    },
+                                                    {
+                                                        "S": "EDIT_AMOUNT_DOWN"
+                                                    },
+                                                    {
+                                                        "S": "EDIT_TIP_AMOUNT_UP"
+                                                    },
+                                                    {
+                                                        "S": "EDIT_TIP_AMOUNT_DOWN"
+                                                    },
+                                                    {
+                                                        "S": "EDIT_DELAY_ACTION"
+                                                    }
+                                                ]
+                                            },
+                                            "delay_action": {
+                                                "S": "CANCEL"
+                                            },
+                                            "reference_id": {
+                                                "S": "SFDC Case#: 55881199"
+                                            },
+                                            "application_details": {
+                                                "M": {
+                                                    "square_product": {
+                                                        "S": "ECOMMERCE_API"
+                                                    },
+                                                    "application_id": {
+                                                        "S": "sandbox-sq0idb-iPpE3Y31r12IQv8JjSAEOg"
+                                                    }
+                                                }
+                                            },
+                                            "created_at": {
+                                                "S": "2023-08-26T21:25:48.607Z"
+                                            },
+                                            "amount_money": {
+                                                "M": {
+                                                    "amount": {
+                                                        "N": "1000050"
+                                                    },
+                                                    "currency": {
+                                                        "S": "USD"
+                                                    }
+                                                }
+                                            },
+                                            "source_type": {
+                                                "S": "CARD"
+                                            },
+                                            "version": {
+                                                "N": "1"
+                                            },
+                                            "location_id": {
+                                                "S": "LD87T1T84K4TG"
+                                            },
+                                            "delayed_until": {
+                                                "S": "2023-09-02T21:25:48.607Z"
+                                            },
+                                            "receipt_number": {
+                                                "S": "dkrG"
+                                            },
+                                            "updated_at": {
+                                                "S": "2023-08-26T21:25:48.723Z"
+                                            },
+                                            "id": {
+                                                "S": "dkrGt5wmHEcxD4JNyFI8VPXoWiKZY"
+                                            },
+                                            "total_money": {
+                                                "M": {
+                                                    "amount": {
+                                                        "N": "1000050"
+                                                    },
+                                                    "currency": {
+                                                        "S": "USD"
+                                                    }
+                                                }
+                                            },
+                                            "approved_money": {
+                                                "M": {
+                                                    "amount": {
+                                                        "N": "1000050"
+                                                    },
+                                                    "currency": {
+                                                        "S": "USD"
+                                                    }
+                                                }
+                                            },
+                                            "delay_duration": {
+                                                "S": "PT168H"
+                                            },
+                                            "order_id": {
+                                                "S": "r94hYoDW8Q7iPwChJPglZOO26a4F"
+                                            },
+                                            "status": {
+                                                "S": "APPROVED"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "created_at": {
+                        "S": "2023-08-26T21:25:48.728Z"
+                    },
+                    "id": {
+                        "S": "a6b62a15-f9b5-3059-b6f5-9b488ba70caf"
+                    },
+                    "merchant_id": {
+                        "S": "MLAW1CNA2GHX2"
+                    },
+                    "type": {
+                        "S": "payment.created"
+                    }
+                },
+                "SequenceNumber": "71611100000000025682678011",
+                "SizeBytes": 1365,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "eventSourceARN": "arn:aws:dynamodb:us-east-2:618528366220:table/SquareupWebhookEventTable/stream/2023-08-26T01:30:44.131"
+        }
+    ]
+}
+}

@@ -1,0 +1,14 @@
+{
+  "name": "webhooks-test2",
+  "version": "1.0.0",
+  "description": "Simple Webhook Handler using AWS-SAM-SDK",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samidh Das",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1433.0"
+  }
+}
