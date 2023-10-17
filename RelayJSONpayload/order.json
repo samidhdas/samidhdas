@@ -1,0 +1,159 @@
+{
+    "order": {
+      "id": "fnKSusEf2nAljFZLFxWk3Ty6Xd4F",
+      "location_id": "LD87T1T84K4TG",
+      "line_items": [
+        {
+          "uid": "4f555072-a95a-4a77-91c7-ce4e08b7bc51",
+          "quantity": "1",
+          "name": "Washlet repair for Taylor Swift",
+          "base_price_money": {
+            "amount": 50056,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 50056,
+            "currency": "USD"
+          },
+          "total_tax_money": {
+            "amount": 0,
+            "currency": "USD"
+          },
+          "total_discount_money": {
+            "amount": 0,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 50056,
+            "currency": "USD"
+          },
+          "variation_total_price_money": {
+            "amount": 50056,
+            "currency": "USD"
+          },
+          "item_type": "ITEM",
+          "total_service_charge_money": {
+            "amount": 0,
+            "currency": "USD"
+          }
+        },
+        {
+          "uid": "7c8f7d20-890a-492c-b142-3589e607530e",
+          "quantity": "1",
+          "name": "Electrical solenoid repair",
+          "base_price_money": {
+            "amount": 30046,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 30046,
+            "currency": "USD"
+          },
+          "total_tax_money": {
+            "amount": 0,
+            "currency": "USD"
+          },
+          "total_discount_money": {
+            "amount": 0,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 30046,
+            "currency": "USD"
+          },
+          "variation_total_price_money": {
+            "amount": 30046,
+            "currency": "USD"
+          },
+          "item_type": "ITEM",
+          "total_service_charge_money": {
+            "amount": 0,
+            "currency": "USD"
+          }
+        }
+      ],
+      "created_at": "2023-10-14T03:06:36.445Z",
+      "updated_at": "2023-10-14T03:43:15.000Z",
+      "state": "COMPLETED",
+      "version": 7,
+      "total_tax_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_money": {
+        "amount": 80102,
+        "currency": "USD"
+      },
+      "closed_at": "2023-10-14T03:43:13.514Z",
+      "tenders": [
+        {
+          "id": "BiLnr7M9hjcTfLP0m9ytlR793R8YY",
+          "location_id": "LD87T1T84K4TG",
+          "transaction_id": "fnKSusEf2nAljFZLFxWk3Ty6Xd4F",
+          "created_at": "2023-10-14T03:43:13Z",
+          "note": "SFDC Case# 191877",
+          "amount_money": {
+            "amount": 80102,
+            "currency": "USD"
+          },
+          "type": "CARD",
+          "card_details": {
+            "status": "CAPTURED",
+            "card": {
+              "card_brand": "DISCOVER_DINERS",
+              "last_4": "0004",
+              "fingerprint": "sq-1-k_2Uh2ewcok-U6dOu5DUj7vx-WQggnX2G-ZjKS-512gz7KrnjRVaePd63XNmi0legw"
+            },
+            "entry_method": "KEYED"
+          },
+          "tip_money": {
+            "amount": 0,
+            "currency": "USD"
+          },
+          "payment_id": "BiLnr7M9hjcTfLP0m9ytlR793R8YY"
+        }
+      ],
+      "total_service_charge_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "net_amounts": {
+        "total_money": {
+          "amount": 80102,
+          "currency": "USD"
+        },
+        "tax_money": {
+          "amount": 0,
+          "currency": "USD"
+        },
+        "discount_money": {
+          "amount": 0,
+          "currency": "USD"
+        },
+        "tip_money": {
+          "amount": 0,
+          "currency": "USD"
+        },
+        "service_charge_money": {
+          "amount": 0,
+          "currency": "USD"
+        }
+      },
+      "source": {
+        "name": "Invoices"
+      },
+      "customer_id": "6SW0N8Q55M84BP2PTA6GX647D0",
+      "net_amount_due_money": {
+        "amount": 0,
+        "currency": "USD"
+      }
+    }
+  }

@@ -1,5 +1,5 @@
 {
-    "event_id": "10307054-b4e7-51d8-be0a-d0b5ecaff39a",
+    "event_id": "c1f04d45-51c8-52b4-a72d-f18b0ede6b13",
     "data": {
         "id": "inv:0-ChBlLK6fQM_3Gt3zgykMcIMgENIL",
         "type": "invoice",
@@ -17,7 +17,7 @@
                     "bank_account": false
                 },
                 "title": "Washlet repair for Taylor Swift",
-                "version": 0,
+                "version": 1,
                 "location_id": "LD87T1T84K4TG",
                 "public_url": "https://squareupsandbox.com/pay-invoice/inv:0-ChBlLK6fQM_3Gt3zgykMcIMgENIL",
                 "primary_recipient": {
@@ -49,12 +49,12 @@
                             {
                                 "uid": "f9c72552-3182-4434-a3ba-53365f9ed74e",
                                 "relative_scheduled_days": 1,
-                                "status": "PENDING"
+                                "status": "NOT_APPLICABLE"
                             },
                             {
                                 "uid": "11afeac9-9b13-418c-8f32-eebc9ce85bc9",
                                 "relative_scheduled_days": 3,
-                                "status": "PENDING"
+                                "status": "NOT_APPLICABLE"
                             }
                         ],
                         "uid": "e77e877e-a889-43a2-a605-20cf7df8268b",
@@ -62,7 +62,7 @@
                         "automatic_payment_source": "NONE",
                         "due_date": "2023-10-14",
                         "total_completed_amount_money": {
-                            "amount": 0,
+                            "amount": 80102,
                             "currency": "USD"
                         },
                         "computed_amount_money": {
@@ -73,22 +73,18 @@
                     }
                 ],
                 "sale_or_service_date": "2023-10-13",
-                "updated_at": "2023-10-14T03:06:36Z",
+                "updated_at": "2023-10-14T03:43:13Z",
                 "delivery_method": "EMAIL",
-                "next_payment_amount_money": {
-                    "amount": 80102,
-                    "currency": "USD"
-                },
                 "id": "inv:0-ChBlLK6fQM_3Gt3zgykMcIMgENIL",
                 "invoice_number": "191877",
                 "order_id": "fnKSusEf2nAljFZLFxWk3Ty6Xd4F",
-                "status": "UNPAID"
+                "status": "PAID"
             }
         }
     },
-    "created_at": "2023-10-14T03:06:37Z",
-    "id": "10307054-b4e7-51d8-be0a-d0b5ecaff39a",
+    "created_at": "2023-10-14T03:43:21Z",
+    "id": "c1f04d45-51c8-52b4-a72d-f18b0ede6b13",
     "merchant_id": "MLAW1CNA2GHX2",
-    "type": "invoice.published",
+    "type": "invoice.payment_made",
     "location_id": "LD87T1T84K4TG"
 }
