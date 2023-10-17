@@ -1,0 +1,94 @@
+{
+    "event_id": "10307054-b4e7-51d8-be0a-d0b5ecaff39a",
+    "data": {
+        "id": "inv:0-ChBlLK6fQM_3Gt3zgykMcIMgENIL",
+        "type": "invoice",
+        "object": {
+            "invoice": {
+                "timezone": "UTC",
+                "created_at": "2023-10-14T03:06:36Z",
+                "description": "SFDC Case# 191877. Same as manually entered Invoice ID.",
+                "store_payment_method_enabled": false,
+                "accepted_payment_methods": {
+                    "square_gift_card": false,
+                    "cash_app_pay": true,
+                    "buy_now_pay_later": false,
+                    "card": true,
+                    "bank_account": false
+                },
+                "title": "Washlet repair for Taylor Swift",
+                "version": 0,
+                "location_id": "LD87T1T84K4TG",
+                "public_url": "https://squareupsandbox.com/pay-invoice/inv:0-ChBlLK6fQM_3Gt3zgykMcIMgENIL",
+                "primary_recipient": {
+                    "address": {
+                        "address_line_1": "1155 Southern Road",
+                        "locality": "Morrow",
+                        "postal_code": "30260"
+                    },
+                    "email_address": "sdas@toto.com",
+                    "company_name": "TOTO USA INC.",
+                    "phone_number": "+16782168483",
+                    "customer_id": "6SW0N8Q55M84BP2PTA6GX647D0",
+                    "given_name": "Samidh",
+                    "family_name": "Das"
+                },
+                "payment_requests": [
+                    {
+                        "reminders": [
+                            {
+                                "uid": "3fcd3f34-7311-4c01-bd7c-685066daf089",
+                                "relative_scheduled_days": -7,
+                                "status": "NOT_APPLICABLE"
+                            },
+                            {
+                                "uid": "f6f8189d-f74d-49de-9f76-67cf264fea44",
+                                "relative_scheduled_days": 0,
+                                "status": "NOT_APPLICABLE"
+                            },
+                            {
+                                "uid": "f9c72552-3182-4434-a3ba-53365f9ed74e",
+                                "relative_scheduled_days": 1,
+                                "status": "PENDING"
+                            },
+                            {
+                                "uid": "11afeac9-9b13-418c-8f32-eebc9ce85bc9",
+                                "relative_scheduled_days": 3,
+                                "status": "PENDING"
+                            }
+                        ],
+                        "uid": "e77e877e-a889-43a2-a605-20cf7df8268b",
+                        "request_type": "BALANCE",
+                        "automatic_payment_source": "NONE",
+                        "due_date": "2023-10-14",
+                        "total_completed_amount_money": {
+                            "amount": 0,
+                            "currency": "USD"
+                        },
+                        "computed_amount_money": {
+                            "amount": 80102,
+                            "currency": "USD"
+                        },
+                        "tipping_enabled": false
+                    }
+                ],
+                "sale_or_service_date": "2023-10-13",
+                "updated_at": "2023-10-14T03:06:36Z",
+                "delivery_method": "EMAIL",
+                "next_payment_amount_money": {
+                    "amount": 80102,
+                    "currency": "USD"
+                },
+                "id": "inv:0-ChBlLK6fQM_3Gt3zgykMcIMgENIL",
+                "invoice_number": "191877",
+                "order_id": "fnKSusEf2nAljFZLFxWk3Ty6Xd4F",
+                "status": "UNPAID"
+            }
+        }
+    },
+    "created_at": "2023-10-14T03:06:37Z",
+    "id": "10307054-b4e7-51d8-be0a-d0b5ecaff39a",
+    "merchant_id": "MLAW1CNA2GHX2",
+    "type": "invoice.published",
+    "location_id": "LD87T1T84K4TG"
+}
