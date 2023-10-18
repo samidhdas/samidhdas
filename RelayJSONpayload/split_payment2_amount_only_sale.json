@@ -1,0 +1,78 @@
+{
+    "event_id": "b9682317-0b27-3713-8a0f-c1ae3b725df9",
+    "data": {
+        "id": "dgTpYRJT3FKRQxAiGmQz2GkQjrUZY",
+        "type": "payment",
+        "object": {
+            "payment": {
+                "card_details": {
+                    "avs_status": "AVS_ACCEPTED",
+                    "entry_method": "KEYED",
+                    "cvv_status": "CVV_ACCEPTED",
+                    "card_payment_timeline": {
+                        "captured_at": "2023-10-18T05:50:08.321Z",
+                        "authorized_at": "2023-10-18T05:50:05.385Z"
+                    },
+                    "card": {
+                        "last_4": "0009",
+                        "bin": "340000",
+                        "card_brand": "AMERICAN_EXPRESS",
+                        "fingerprint": "sq-1-jCaNgriuF9zkkOKHRCV0l22kbWtcSGuUuhXNEEMWLI9TDr-gC-5ilVjHLLA1jBkRfQ",
+                        "exp_month": 12,
+                        "prepaid_type": "NOT_PREPAID",
+                        "exp_year": 2027,
+                        "card_type": "CREDIT"
+                    },
+                    "statement_description": "SQ *SELLER TEST ACCOUNT ",
+                    "status": "CAPTURED"
+                },
+                "note": "",
+                "delay_action": "CANCEL",
+                "application_details": {
+                    "square_product": "VIRTUAL_TERMINAL",
+                    "application_id": "sandbox-sq0idb-BbZvlaIkgSYnVUI4rpSedg"
+                },
+                "created_at": "2023-10-18T05:50:05.272Z",
+                "processing_fee": [
+                    {
+                        "effective_at": "2023-10-18T07:50:08.000Z",
+                        "amount_money": {
+                            "amount": 1064,
+                            "currency": "USD"
+                        },
+                        "type": "INITIAL"
+                    }
+                ],
+                "amount_money": {
+                    "amount": 29975,
+                    "currency": "USD"
+                },
+                "source_type": "CARD",
+                "version": 3,
+                "location_id": "LD87T1T84K4TG",
+                "delayed_until": "2023-10-18T06:10:05.272Z",
+                "receipt_number": "dgTp",
+                "receipt_url": "https://squareupsandbox.com/receipt/preview/dgTpYRJT3FKRQxAiGmQz2GkQjrUZY",
+                "updated_at": "2023-10-18T05:50:08.863Z",
+                "employee_id": "TMZYsG0VDoUiOiDb",
+                "id": "dgTpYRJT3FKRQxAiGmQz2GkQjrUZY",
+                "total_money": {
+                    "amount": 29975,
+                    "currency": "USD"
+                },
+                "team_member_id": "TMZYsG0VDoUiOiDb",
+                "approved_money": {
+                    "amount": 29975,
+                    "currency": "USD"
+                },
+                "delay_duration": "PT20M",
+                "order_id": "tuUZ5fw97pWQWZgX4C1ur0ukhb4F",
+                "status": "COMPLETED"
+            }
+        }
+    },
+    "created_at": "2023-10-18T05:50:14.786Z",
+    "id": "b9682317-0b27-3713-8a0f-c1ae3b725df9",
+    "merchant_id": "MLAW1CNA2GHX2",
+    "type": "payment.updated"
+}

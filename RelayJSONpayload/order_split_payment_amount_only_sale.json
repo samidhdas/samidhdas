@@ -1,0 +1,145 @@
+{
+    "order": {
+      "id": "tuUZ5fw97pWQWZgX4C1ur0ukhb4F",
+      "location_id": "LD87T1T84K4TG",
+      "line_items": [
+        {
+          "uid": "ac3eb79c-320a-7d05-8d16-5cea73e24c4d",
+          "quantity": "1",
+          "base_price_money": {
+            "amount": 85030,
+            "currency": "USD"
+          },
+          "note": "Split Payment with Amount only sale.",
+          "gross_sales_money": {
+            "amount": 85030,
+            "currency": "USD"
+          },
+          "total_tax_money": {
+            "amount": 0,
+            "currency": "USD"
+          },
+          "total_discount_money": {
+            "amount": 0,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 85030,
+            "currency": "USD"
+          },
+          "variation_total_price_money": {
+            "amount": 85030,
+            "currency": "USD"
+          },
+          "item_type": "CUSTOM_AMOUNT",
+          "pricing_blocklists": {},
+          "total_service_charge_money": {
+            "amount": 0,
+            "currency": "USD"
+          }
+        }
+      ],
+      "created_at": "2023-10-18T05:45:05.032Z",
+      "updated_at": "2023-10-18T05:50:08.000Z",
+      "state": "COMPLETED",
+      "version": 5,
+      "total_tax_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_money": {
+        "amount": 85030,
+        "currency": "USD"
+      },
+      "closed_at": "2023-10-18T05:50:06.394Z",
+      "tenders": [
+        {
+          "id": "HhlJlh6eODkTOPScq5EAoSmeTGMZY",
+          "location_id": "LD87T1T84K4TG",
+          "transaction_id": "tuUZ5fw97pWQWZgX4C1ur0ukhb4F",
+          "created_at": "2023-10-18T05:47:09Z",
+          "note": "",
+          "amount_money": {
+            "amount": 55055,
+            "currency": "USD"
+          },
+          "type": "CARD",
+          "card_details": {
+            "status": "CAPTURED",
+            "card": {
+              "card_brand": "MASTERCARD",
+              "last_4": "5100",
+              "fingerprint": "sq-1-QdKUugFIh-IqwaDy2IctyE0rU7nxxnn7UK4IKOWdKLk1_S7KfjLUOKLEUVCJpbvnJQ"
+            },
+            "entry_method": "KEYED"
+          },
+          "payment_id": "HhlJlh6eODkTOPScq5EAoSmeTGMZY"
+        },
+        {
+          "id": "dgTpYRJT3FKRQxAiGmQz2GkQjrUZY",
+          "location_id": "LD87T1T84K4TG",
+          "transaction_id": "tuUZ5fw97pWQWZgX4C1ur0ukhb4F",
+          "created_at": "2023-10-18T05:50:05Z",
+          "note": "",
+          "amount_money": {
+            "amount": 29975,
+            "currency": "USD"
+          },
+          "type": "CARD",
+          "card_details": {
+            "status": "CAPTURED",
+            "card": {
+              "card_brand": "AMERICAN_EXPRESS",
+              "last_4": "0009",
+              "fingerprint": "sq-1-jCaNgriuF9zkkOKHRCV0l22kbWtcSGuUuhXNEEMWLI9TDr-gC-5ilVjHLLA1jBkRfQ"
+            },
+            "entry_method": "KEYED"
+          },
+          "payment_id": "dgTpYRJT3FKRQxAiGmQz2GkQjrUZY"
+        }
+      ],
+      "total_service_charge_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "net_amounts": {
+        "total_money": {
+          "amount": 85030,
+          "currency": "USD"
+        },
+        "tax_money": {
+          "amount": 0,
+          "currency": "USD"
+        },
+        "discount_money": {
+          "amount": 0,
+          "currency": "USD"
+        },
+        "tip_money": {
+          "amount": 0,
+          "currency": "USD"
+        },
+        "service_charge_money": {
+          "amount": 0,
+          "currency": "USD"
+        }
+      },
+      "source": {},
+      "pricing_options": {
+        "auto_apply_discounts": true,
+        "auto_apply_taxes": true
+      },
+      "net_amount_due_money": {
+        "amount": 0,
+        "currency": "USD"
+      }
+    }
+  }

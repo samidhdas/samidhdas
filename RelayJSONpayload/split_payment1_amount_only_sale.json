@@ -1,0 +1,78 @@
+{
+    "event_id": "55341d90-5926-3f7d-af47-350d16024aa0",
+    "data": {
+        "id": "HhlJlh6eODkTOPScq5EAoSmeTGMZY",
+        "type": "payment",
+        "object": {
+            "payment": {
+                "card_details": {
+                    "avs_status": "AVS_ACCEPTED",
+                    "entry_method": "KEYED",
+                    "cvv_status": "CVV_ACCEPTED",
+                    "card_payment_timeline": {
+                        "captured_at": "2023-10-18T05:50:08.194Z",
+                        "authorized_at": "2023-10-18T05:47:09.306Z"
+                    },
+                    "card": {
+                        "last_4": "5100",
+                        "bin": "510510",
+                        "card_brand": "MASTERCARD",
+                        "fingerprint": "sq-1-QdKUugFIh-IqwaDy2IctyE0rU7nxxnn7UK4IKOWdKLk1_S7KfjLUOKLEUVCJpbvnJQ",
+                        "exp_month": 12,
+                        "prepaid_type": "NOT_PREPAID",
+                        "exp_year": 2026,
+                        "card_type": "CREDIT"
+                    },
+                    "statement_description": "SQ *SELLER TEST ACCOUNT ",
+                    "status": "CAPTURED"
+                },
+                "note": "",
+                "delay_action": "CANCEL",
+                "application_details": {
+                    "square_product": "VIRTUAL_TERMINAL",
+                    "application_id": "sandbox-sq0idb-BbZvlaIkgSYnVUI4rpSedg"
+                },
+                "created_at": "2023-10-18T05:47:09.193Z",
+                "processing_fee": [
+                    {
+                        "effective_at": "2023-10-18T07:50:09.000Z",
+                        "amount_money": {
+                            "amount": 1942,
+                            "currency": "USD"
+                        },
+                        "type": "INITIAL"
+                    }
+                ],
+                "amount_money": {
+                    "amount": 55055,
+                    "currency": "USD"
+                },
+                "source_type": "CARD",
+                "version": 3,
+                "location_id": "LD87T1T84K4TG",
+                "delayed_until": "2023-10-18T06:07:09.193Z",
+                "receipt_number": "HhlJ",
+                "receipt_url": "https://squareupsandbox.com/receipt/preview/HhlJlh6eODkTOPScq5EAoSmeTGMZY",
+                "updated_at": "2023-10-18T05:50:09.273Z",
+                "employee_id": "TMZYsG0VDoUiOiDb",
+                "id": "HhlJlh6eODkTOPScq5EAoSmeTGMZY",
+                "total_money": {
+                    "amount": 55055,
+                    "currency": "USD"
+                },
+                "team_member_id": "TMZYsG0VDoUiOiDb",
+                "approved_money": {
+                    "amount": 55055,
+                    "currency": "USD"
+                },
+                "delay_duration": "PT20M",
+                "order_id": "tuUZ5fw97pWQWZgX4C1ur0ukhb4F",
+                "status": "COMPLETED"
+            }
+        }
+    },
+    "created_at": "2023-10-18T05:50:12.57Z",
+    "id": "55341d90-5926-3f7d-af47-350d16024aa0",
+    "merchant_id": "MLAW1CNA2GHX2",
+    "type": "payment.updated"
+}
