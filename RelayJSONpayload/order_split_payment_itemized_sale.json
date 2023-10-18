@@ -1,0 +1,188 @@
+{
+    "order": {
+      "id": "7BIkVS6gjipY6kMNW44RAbu7Qd4F",
+      "location_id": "LD87T1T84K4TG",
+      "line_items": [
+        {
+          "uid": "4bf8516e-030f-ad83-1db6-fedad846d07c",
+          "catalog_object_id": "EMFMU3UVVCUNM4JBGRWCZLAL",
+          "catalog_version": 1697562734977,
+          "quantity": "1",
+          "name": "Washlet repair",
+          "variation_name": "",
+          "base_price_money": {
+            "amount": 50053,
+            "currency": "USD"
+          },
+          "note": "JDE Acct. No. Offset: 12345.123.115599",
+          "gross_sales_money": {
+            "amount": 50053,
+            "currency": "USD"
+          },
+          "total_tax_money": {
+            "amount": 0,
+            "currency": "USD"
+          },
+          "total_discount_money": {
+            "amount": 0,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 50053,
+            "currency": "USD"
+          },
+          "variation_total_price_money": {
+            "amount": 50053,
+            "currency": "USD"
+          },
+          "item_type": "ITEM",
+          "pricing_blocklists": {},
+          "total_service_charge_money": {
+            "amount": 0,
+            "currency": "USD"
+          }
+        },
+        {
+          "uid": "f1f3ab14-1ac7-425e-e0db-8eb5028de3b2",
+          "catalog_object_id": "YTFY5SO6MH7P727GSHQTKU74",
+          "catalog_version": 1697562874777,
+          "quantity": "1",
+          "name": "Flush valve repair",
+          "variation_name": "",
+          "base_price_money": {
+            "amount": 20034,
+            "currency": "USD"
+          },
+          "note": "JDE Account Offset: 4321.55.98765",
+          "gross_sales_money": {
+            "amount": 20034,
+            "currency": "USD"
+          },
+          "total_tax_money": {
+            "amount": 0,
+            "currency": "USD"
+          },
+          "total_discount_money": {
+            "amount": 0,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 20034,
+            "currency": "USD"
+          },
+          "variation_total_price_money": {
+            "amount": 20034,
+            "currency": "USD"
+          },
+          "item_type": "ITEM",
+          "pricing_blocklists": {},
+          "total_service_charge_money": {
+            "amount": 0,
+            "currency": "USD"
+          }
+        }
+      ],
+      "created_at": "2023-10-17T17:15:58.433Z",
+      "updated_at": "2023-10-17T17:20:23.000Z",
+      "state": "COMPLETED",
+      "version": 5,
+      "total_tax_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_money": {
+        "amount": 70087,
+        "currency": "USD"
+      },
+      "closed_at": "2023-10-17T17:20:20.873Z",
+      "tenders": [
+        {
+          "id": "d4dkoSXOJUd6fSO2XBWpPkCqeT7YY",
+          "location_id": "LD87T1T84K4TG",
+          "transaction_id": "7BIkVS6gjipY6kMNW44RAbu7Qd4F",
+          "created_at": "2023-10-17T17:17:35Z",
+          "note": "",
+          "amount_money": {
+            "amount": 50000,
+            "currency": "USD"
+          },
+          "type": "CARD",
+          "card_details": {
+            "status": "CAPTURED",
+            "card": {
+              "card_brand": "MASTERCARD",
+              "last_4": "5100",
+              "fingerprint": "sq-1-QdKUugFIh-IqwaDy2IctyE0rU7nxxnn7UK4IKOWdKLk1_S7KfjLUOKLEUVCJpbvnJQ"
+            },
+            "entry_method": "KEYED"
+          },
+          "payment_id": "d4dkoSXOJUd6fSO2XBWpPkCqeT7YY"
+        },
+        {
+          "id": "1mGQ444tl2EtyAAc3aVE4VLVkqbZY",
+          "location_id": "LD87T1T84K4TG",
+          "transaction_id": "7BIkVS6gjipY6kMNW44RAbu7Qd4F",
+          "created_at": "2023-10-17T17:20:18Z",
+          "note": "",
+          "amount_money": {
+            "amount": 20087,
+            "currency": "USD"
+          },
+          "type": "CARD",
+          "card_details": {
+            "status": "CAPTURED",
+            "card": {
+              "card_brand": "DISCOVER",
+              "last_4": "0004",
+              "fingerprint": "sq-1-1M2wJpbnBf_6Bt9OXDw9XqD20D1sj7KNEEt6vGFw6fJ1PsJuhVXBfWpbrL8SJCbSuQ"
+            },
+            "entry_method": "KEYED"
+          },
+          "payment_id": "1mGQ444tl2EtyAAc3aVE4VLVkqbZY"
+        }
+      ],
+      "total_service_charge_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "net_amounts": {
+        "total_money": {
+          "amount": 70087,
+          "currency": "USD"
+        },
+        "tax_money": {
+          "amount": 0,
+          "currency": "USD"
+        },
+        "discount_money": {
+          "amount": 0,
+          "currency": "USD"
+        },
+        "tip_money": {
+          "amount": 0,
+          "currency": "USD"
+        },
+        "service_charge_money": {
+          "amount": 0,
+          "currency": "USD"
+        }
+      },
+      "source": {},
+      "pricing_options": {
+        "auto_apply_discounts": true,
+        "auto_apply_taxes": true
+      },
+      "net_amount_due_money": {
+        "amount": 0,
+        "currency": "USD"
+      }
+    }
+  }

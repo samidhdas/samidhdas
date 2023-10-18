@@ -1,7 +1,7 @@
 {
-    "event_id": "560e9945-28aa-31ba-a7ba-c666d9448831",
+    "event_id": "9a884dc7-2f86-35b8-81ef-5909e5290b95",
     "data": {
-        "id": "BiLnr7M9hjcTfLP0m9ytlR793R8YY",
+        "id": "d4dkoSXOJUd6fSO2XBWpPkCqeT7YY",
         "type": "payment",
         "object": {
             "payment": {
@@ -10,14 +10,14 @@
                     "entry_method": "KEYED",
                     "cvv_status": "CVV_ACCEPTED",
                     "card_payment_timeline": {
-                        "captured_at": "2023-10-14T03:43:13.497Z",
-                        "authorized_at": "2023-10-14T03:43:13.414Z"
+                        "captured_at": "2023-10-17T17:20:23.355Z",
+                        "authorized_at": "2023-10-17T17:17:35.202Z"
                     },
                     "card": {
-                        "last_4": "0004",
-                        "bin": "300000",
-                        "card_brand": "DISCOVER_DINERS",
-                        "fingerprint": "sq-1-k_2Uh2ewcok-U6dOu5DUj7vx-WQggnX2G-ZjKS-512gz7KrnjRVaePd63XNmi0legw",
+                        "last_4": "5100",
+                        "bin": "510510",
+                        "card_brand": "MASTERCARD",
+                        "fingerprint": "sq-1-QdKUugFIh-IqwaDy2IctyE0rU7nxxnn7UK4IKOWdKLk1_S7KfjLUOKLEUVCJpbvnJQ",
                         "exp_month": 12,
                         "prepaid_type": "NOT_PREPAID",
                         "exp_year": 2026,
@@ -26,58 +26,53 @@
                     "statement_description": "SQ *SELLER TEST ACCOUNT ",
                     "status": "CAPTURED"
                 },
-                "note": "SFDC Case# 191877",
-                "buyer_email_address": "sdas@toto.com",
+                "note": "",
                 "delay_action": "CANCEL",
                 "application_details": {
-                    "square_product": "INVOICES",
-                    "application_id": "sandbox-sq0idb-iKaL0GY_L13b75J0K2qgsw"
+                    "square_product": "VIRTUAL_TERMINAL",
+                    "application_id": "sandbox-sq0idb-BbZvlaIkgSYnVUI4rpSedg"
                 },
-                "created_at": "2023-10-14T03:43:13.300Z",
+                "created_at": "2023-10-17T17:17:35.093Z",
                 "processing_fee": [
                     {
-                        "effective_at": "2023-10-14T05:43:14.000Z",
+                        "effective_at": "2023-10-17T19:20:24.000Z",
                         "amount_money": {
-                            "amount": 2819,
+                            "amount": 1765,
                             "currency": "USD"
                         },
                         "type": "INITIAL"
                     }
                 ],
                 "amount_money": {
-                    "amount": 80102,
+                    "amount": 50000,
                     "currency": "USD"
                 },
                 "source_type": "CARD",
                 "version": 3,
                 "location_id": "LD87T1T84K4TG",
-                "delayed_until": "2023-10-21T03:43:13.300Z",
-                "receipt_number": "BiLn",
-                "receipt_url": "https://squareupsandbox.com/receipt/preview/BiLnr7M9hjcTfLP0m9ytlR793R8YY",
-                "tip_money": {
-                    "amount": 0,
-                    "currency": "USD"
-                },
-                "updated_at": "2023-10-14T03:43:14.586Z",
+                "delayed_until": "2023-10-17T17:37:35.093Z",
+                "receipt_number": "d4dk",
+                "receipt_url": "https://squareupsandbox.com/receipt/preview/d4dkoSXOJUd6fSO2XBWpPkCqeT7YY",
+                "updated_at": "2023-10-17T17:20:24.588Z",
                 "employee_id": "TMZYsG0VDoUiOiDb",
-                "id": "BiLnr7M9hjcTfLP0m9ytlR793R8YY",
+                "id": "d4dkoSXOJUd6fSO2XBWpPkCqeT7YY",
                 "total_money": {
-                    "amount": 80102,
+                    "amount": 50000,
                     "currency": "USD"
                 },
                 "team_member_id": "TMZYsG0VDoUiOiDb",
                 "approved_money": {
-                    "amount": 80102,
+                    "amount": 50000,
                     "currency": "USD"
                 },
-                "delay_duration": "PT168H",
-                "order_id": "fnKSusEf2nAljFZLFxWk3Ty6Xd4F",
+                "delay_duration": "PT20M",
+                "order_id": "7BIkVS6gjipY6kMNW44RAbu7Qd4F",
                 "status": "COMPLETED"
             }
         }
     },
-    "created_at": "2023-10-14T03:43:22.166Z",
-    "id": "560e9945-28aa-31ba-a7ba-c666d9448831",
+    "created_at": "2023-10-17T17:20:46.137Z",
+    "id": "9a884dc7-2f86-35b8-81ef-5909e5290b95",
     "merchant_id": "MLAW1CNA2GHX2",
     "type": "payment.updated"
 }
