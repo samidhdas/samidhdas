@@ -1,0 +1,186 @@
+{
+    "order": {
+        "id": "eJnsTIa2aAPKjkcOJjZDUyMF",
+        "location_id": "LD87T1T84K4TG",
+        "line_items": [
+            {
+                "uid": "7fa80870-e16a-4836-b048-8d7a9007b165",
+                "catalog_object_id": "TJZC3O4ACUIGHT7IFL7TYJMC",
+                "catalog_version": 1697658181621,
+                "quantity": "1",
+                "name": "12345.123.115599",
+                "variation_name": "Regular",
+                "base_price_money": {
+                    "amount": 65020,
+                    "currency": "USD"
+                },
+                "gross_sales_money": {
+                    "amount": 65020,
+                    "currency": "USD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "USD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "USD"
+                },
+                "total_money": {
+                    "amount": 65020,
+                    "currency": "USD"
+                },
+                "variation_total_price_money": {
+                    "amount": 65020,
+                    "currency": "USD"
+                },
+                "item_type": "ITEM",
+                "total_service_charge_money": {
+                    "amount": 0,
+                    "currency": "USD"
+                }
+            },
+            {
+                "uid": "6e4a2b74-b05f-47ac-b857-ccc45c479c62",
+                "catalog_object_id": "G63GYT7XH2PCHAFKEQN7JSWG",
+                "catalog_version": 1697658315256,
+                "quantity": "1",
+                "name": "4321.55.98765",
+                "variation_name": "Regular",
+                "base_price_money": {
+                    "amount": 25030,
+                    "currency": "USD"
+                },
+                "gross_sales_money": {
+                    "amount": 25030,
+                    "currency": "USD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "USD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "USD"
+                },
+                "total_money": {
+                    "amount": 25030,
+                    "currency": "USD"
+                },
+                "variation_total_price_money": {
+                    "amount": 25030,
+                    "currency": "USD"
+                },
+                "item_type": "ITEM",
+                "total_service_charge_money": {
+                    "amount": 0,
+                    "currency": "USD"
+                }
+            }
+        ],
+        "created_at": "2023-10-18T20:00:15Z",
+        "updated_at": "2023-10-18T20:00:16.000Z",
+        "state": "COMPLETED",
+        "total_tax_money": {
+            "amount": 0,
+            "currency": "USD"
+        },
+        "total_discount_money": {
+            "amount": 0,
+            "currency": "USD"
+        },
+        "total_tip_money": {
+            "amount": 0,
+            "currency": "USD"
+        },
+        "total_money": {
+            "amount": 90050,
+            "currency": "USD"
+        },
+        "closed_at": "2023-10-18T20:00:16.000Z",
+        "tenders": [
+            {
+                "id": "JyVFt50QJOWYPra0PqVJuCt9taB",
+                "location_id": "LD87T1T84K4TG",
+                "transaction_id": "eJnsTIa2aAPKjkcOJjZDUyMF",
+                "created_at": "2023-10-18T20:00:15Z",
+                "amount_money": {
+                    "amount": 90050,
+                    "currency": "USD"
+                },
+                "processing_fee_money": {
+                    "amount": 2641,
+                    "currency": "USD"
+                },
+                "customer_id": "6SW0N8Q55M84BP2PTA6GX647D0",
+                "type": "CARD",
+                "card_details": {
+                    "status": "CAPTURED",
+                    "card": {
+                        "card_brand": "VISA",
+                        "last_4": "1111"
+                    },
+                    "entry_method": "KEYED"
+                },
+                "tip_money": {
+                    "amount": 0,
+                    "currency": "USD"
+                }
+            }
+        ],
+        "total_service_charge_money": {
+            "amount": 0,
+            "currency": "USD"
+        },
+        "return_amounts": {
+            "total_money": {
+                "amount": 0,
+                "currency": "USD"
+            },
+            "tax_money": {
+                "amount": 0,
+                "currency": "USD"
+            },
+            "discount_money": {
+                "amount": 0,
+                "currency": "USD"
+            },
+            "tip_money": {
+                "amount": 0,
+                "currency": "USD"
+            },
+            "service_charge_money": {
+                "amount": 0,
+                "currency": "USD"
+            }
+        },
+        "net_amounts": {
+            "total_money": {
+                "amount": 90050,
+                "currency": "USD"
+            },
+            "tax_money": {
+                "amount": 0,
+                "currency": "USD"
+            },
+            "discount_money": {
+                "amount": 0,
+                "currency": "USD"
+            },
+            "tip_money": {
+                "amount": 0,
+                "currency": "USD"
+            },
+            "service_charge_money": {
+                "amount": 0,
+                "currency": "USD"
+            }
+        },
+        "source": {},
+        "customer_id": "6SW0N8Q55M84BP2PTA6GX647D0",
+        "net_amount_due_money": {
+            "amount": 0,
+            "currency": "USD"
+        }
+    }
+}
