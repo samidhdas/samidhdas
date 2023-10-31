@@ -30,9 +30,10 @@ app.post('/receive', async (req, res) => {
         if (response.status === 200) {
           // If the response is successful, GET the Order and POST it. Then send a successful status back.
 
-	        let refmoney = 'refunded_money';
+	  let refmoney = 'refunded_money';
           if (payload.type === 'payment.updated' && !(payload.data.object.payment.hasOwnProperty(refmoney))) {
-              const ORDER_ID = payload.data.object.payment.order_id;
+	      //const ORDER_ID = '';
+              ORDER_ID = payload.data.object.payment.order_id;
               console.log('ORDER_ID: ' + ORDER_ID);
 
               await getOrder(ORDER_ID)
@@ -100,11 +101,13 @@ async function getOrder(ORDER_ID) {
       'Content-Type': 'application/json',
   }
 
-  url = url.concat(ORDER_ID)
+  let getOrdURL = '';
+  getOrdURL = url.concat(ORDER_ID)
+  // url = url.concat(ORDER_ID)
   let getResponse
 
   try{
-      getResponse = await axios.get(url, { headers })
+      getResponse = await axios.get(getOrdURL, { headers })
   } catch (err) {
       console.log(err.message)
   }
